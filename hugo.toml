@@ -1,0 +1,73 @@
+baseURL = "https://srpskistudenti.ch/"
+title = "Srpski studenti u Švajcarskoj"
+languageCode = "sr-RS"
+defaultContentLanguage = "sr"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+summaryLength = 28
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  description = "Premium statički sajt za Srpske studente u Švajcarskoj."
+  brandLogo = "/images/brand/logo-vss-uss.png"
+  ogImage = "/images/brand/logo-vss-uss.png"
+  defaultImage = "/images/og-default.jpg"
+
+[pagination]
+  pagerSize = 9
+
+[permalinks]
+  blog = "/blog/:year/:month/:slug/"
+  events = "/events/:year/:month/:day/:slug/"
+  guide = "/guide/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[imaging]
+  quality = 82
+  resampleFilter = "Lanczos"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  city = "cities"
+  type = "types"
+
+[languages]
+  [languages.sr]
+    languageName = "Srpski"
+    weight = 1
+    contentDir = "content"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content"
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 3
+    contentDir = "content"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"

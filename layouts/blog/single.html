@@ -1,0 +1,43 @@
+{{ define "main" }}
+<article class="container content-page article-page">
+  <header class="page-hero article-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Blog post</p>
+    <h1>{{ .Title }}</h1>
+    <div class="article-meta">
+      <span>{{ .Date.Format "2 Jan 2006" }}</span>
+      {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.categories }}<span>{{ index . 0 }}</span>{{ end }}
+    </div>
+  </header>
+
+  {{ with .Params.image }}
+    <figure class="article-cover">
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    </figure>
+  {{ end }}
+
+  <div class="article-layout">
+    <div class="prose">
+      {{ if .Params.toc }}<aside class="toc">{{ .TableOfContents }}</aside>{{ end }}
+      {{ .Content }}
+      <div class="share-bar">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | urlquery }}" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/intent/tweet?url={{ .Permalink | urlquery }}&text={{ .Title | urlquery }}" target="_blank" rel="noreferrer">X</a>
+      </div>
+    </div>
+    <aside class="sidebar-card card author-card">
+      <h2>Autor</h2>
+      <p>{{ with .Params.author }}{{ . }}{{ else }}Editorial Team{{ end }}</p>
+      <p>Tim organizacije koji uređuje vesti, vodiče i priče iz zajednice.</p>
+      <h3>Povezano</h3>
+      {{ range first 4 (where .Site.RegularPages "Section" "blog") }}
+        {{ if ne .RelPermalink $.RelPermalink }}
+          <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        {{ end }}
+      {{ end }}
+    </aside>
+  </div>
+</article>
+{{ end }}

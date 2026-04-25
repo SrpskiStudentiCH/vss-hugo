@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="container content-page">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Pridruživanje</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

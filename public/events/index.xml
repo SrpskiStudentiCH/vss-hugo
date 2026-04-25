@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Događaji on Srpski studenti u Švajcarskoj</title>
+    <link>http://localhost:1313/events/</link>
+    <description>Recent content in Događaji on Srpski studenti u Švajcarskoj</description>
+    <generator>Hugo</generator>
+    <language>sr</language>
+    <lastBuildDate>Wed, 15 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generalna skupština 2021</title>
+      <link>http://localhost:1313/events/2021/12/15/generalna-skup%C5%A1tina-2021/</link>
+      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/2021/12/15/generalna-skup%C5%A1tina-2021/</guid>
+      <description>&lt;p&gt;Generalna skupština 2021 bila je mesto gde su članovi prošli kroz rezultate, izazove i sledeće korake organizacije.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vidovdanski izlet 2021</title>
+      <link>http://localhost:1313/events/2021/07/04/vidovdanski-izlet-2021/</link>
+      <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/2021/07/04/vidovdanski-izlet-2021/</guid>
+      <description>&lt;p&gt;Završetak semestra i St. Vitus dan (Vidovdan), važan datum za srpsku zajednicu, obeležili smo uz članove organizacije na Greifenseeu. Dobar roštilj, toplo vreme i muzika su napravili odličnu atmosferu, a druženje je trajalo do kasno uveče.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Foxtrail Bern 2021</title>
+      <link>http://localhost:1313/events/2021/05/29/foxtrail-bern-2021/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/2021/05/29/foxtrail-bern-2021/</guid>
+      <description>&lt;p&gt;Foxtrail u Bernu je bio jedan od događaja koji su spojili zabavu, timski duh i gradsko istraživanje.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wanderung - April 2021</title>
+      <link>http://localhost:1313/events/2021/04/03/wanderung-april-2021/</link>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/2021/04/03/wanderung-april-2021/</guid>
+      <description>&lt;p&gt;Prolećna šetnja i zajedničko druženje članova u prirodi, sa naglaskom na neformalni susret i zajednicu.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

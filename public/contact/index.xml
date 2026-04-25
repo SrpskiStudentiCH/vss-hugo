@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kontakt on Srpski studenti u Švajcarskoj</title>
+    <link>http://localhost:1313/contact/</link>
+    <description>Recent content in Kontakt on Srpski studenti u Švajcarskoj</description>
+    <generator>Hugo</generator>
+    <language>sr</language>
+    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/contact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradska predstavništva</title>
+      <link>http://localhost:1313/contact/chapters/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/chapters/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Zürich&lt;/li&gt;&#xA;&lt;li&gt;Bern&lt;/li&gt;&#xA;&lt;li&gt;Lausanne&lt;/li&gt;&#xA;&lt;li&gt;Geneva&lt;/li&gt;&#xA;&lt;li&gt;Basel&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

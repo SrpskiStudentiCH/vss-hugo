@@ -1,0 +1,143 @@
+# Deutsch - Translation Strings
+site_title: "Serbische Studierende in der Schweiz"
+site_description: "Premium-Gemeinschaft für serbische Studierende in der Schweiz"
+
+# Navigation
+nav_about: "Über uns"
+nav_events: "Events"
+nav_blog: "Blog"
+nav_guide: "Leitfaden"
+nav_alumni: "Alumni"
+nav_support: "Unterstützung"
+nav_media: "Medien"
+nav_join: "Beitreten"
+nav_contact: "Kontakt"
+nav_language: "Sprache"
+nav_menu: "Menü"
+nav_menu_open: "Menü öffnen"
+nav_menu_close: "Menü schließen"
+theme_toggle: "Thema wechseln"
+
+# Hero
+hero_title: "Gemeinschaft der serbischen Studierenden in der Schweiz"
+hero_subtitle: "Verbindung von Studierenden, Alumni und Partnern durch Events, Wissen und Unterstützung"
+hero_cta: "Mehr erfahren"
+hero_cta_join: "Jetzt beitreten"
+
+# About
+about_title: "Über uns"
+about_section_title: "Wer wir sind"
+about_description: "Serbische Studierende in der Schweiz ist eine lebendige Gemeinschaft, die Studierenden hilft, sich zu integrieren, zu lernen und erfolgreich zu sein."
+about_mission: "Mission"
+about_mission_text: "Wir vereinen serbische Studierende in der Schweiz durch kulturelle Events, akademische Unterstützung und geschäftliche Netzwerke."
+about_values: "Unsere Werte"
+about_founded: "Gegründet 2015"
+
+# Events
+events_title: "Events"
+events_upcoming: "Kommende Events"
+events_past: "Vergangene Events"
+events_view_all: "Alle Events anzeigen"
+events_register: "Anmelden"
+events_more_info: "Weitere Informationen"
+events_date: "Datum"
+events_location: "Ort"
+events_type: "Typ"
+
+# Blog
+blog_title: "Blog"
+blog_latest: "Neueste aus dem Blog"
+blog_read_more: "Mehr lesen"
+blog_published: "Veröffentlicht"
+blog_author: "Autor"
+blog_reading_time: "Lesezeit"
+blog_related: "Verwandte Artikel"
+blog_share: "Teilen"
+
+# Guide
+guide_title: "Leitfaden"
+guide_living: "Wie man in der Schweiz lebt"
+guide_studying: "Wie man in der Schweiz studiert"
+guide_cities: "Bahnhöfe nach Städten"
+
+# Join
+join_title: "Beitreten"
+join_description: "Werden Sie Teil unserer Gemeinschaft"
+join_benefits: "Mitgliedschaftsvorteile"
+join_button: "Jetzt beitreten"
+
+# Contact
+contact_title: "Kontakt"
+contact_form_name: "Name"
+contact_form_email: "E-Mail"
+contact_form_message: "Nachricht"
+contact_form_send: "Senden"
+contact_email: "E-Mail"
+contact_location: "Ort"
+
+# Alumni
+alumni_title: "Alumni"
+alumni_description: "Unsere erfolgreichen Alumni, die in verschiedenen Bereichen Einfluss haben"
+alumni_stories: "Erfolgsgeschichten"
+
+# Media
+media_title: "Medien"
+media_gallery: "Galerie"
+media_videos: "Videos"
+
+# Support
+support_title: "Unterstützung"
+support_description: "Stiftungen und Partner, die unsere Mission unterstützen"
+
+# Footer
+footer_links: "Links"
+footer_legal: "Rechtliches"
+footer_privacy: "Datenschutz"
+footer_terms: "Nutzungsbedingungen"
+footer_contact: "Kontaktieren Sie uns"
+footer_newsletter: "Melden Sie sich für unseren Newsletter an"
+footer_follow: "Folge uns"
+
+# Home Page
+home_eyebrow: "Serbische Studierende in der Schweiz"
+home_title: "Gemeinschaft, die Studierende, Alumni und Partner durch Wissen, Events und Möglichkeiten verbindet."
+home_description: "Premium-Studentenorganisation mit klarer Identität, modernem Inhalt und seriösem Netzwerkansatz in der Schweiz."
+home_cta_join: "Jetzt beitreten"
+home_stats_members: "Mitglieder"
+home_stats_cities: "Städte"
+home_stats_events: "Veranstaltungen pro Jahr"
+home_why_eyebrow: "Warum wir"
+home_why_title: "Plattform für Studierende, nicht nur fürs Aussehen"
+home_why_networking_title: "Netzwerken mit Sinn"
+home_why_networking_desc: "Echte Verbindungen zu Menschen, die in Studium, Praktika, Karriere und Leben in der Schweiz helfen können."
+home_why_content_title: "Nützliche Inhalte"
+home_why_content_desc: "Blog, Leitfäden und Ressourcen, die relevant bleiben und über Markdown leicht aktualisiert werden."
+home_why_community_title: "Nachhaltige Gemeinschaft"
+home_why_community_desc: "Poliertes visuelles und inhaltliches Konzept, das Jahre wachsen kann ohne vollständiges Redesign."
+home_membership_eyebrow: "Mitgliedschaft"
+home_membership_title: "Warum beitreten"
+home_membership_network_title: "Netzwerkzugang"
+home_membership_network_desc: "Zugang zu Menschen, Events und Informationen, die Ihre Anpassung und Fortschritt beschleunigen."
+home_membership_volunteer_title: "Freiwilligenarbeit"
+home_membership_volunteer_desc: "Beteiligen Sie sich an der Organisation von Veranstaltungen, Kommunikation, Design und Inhalten."
+home_testimonials_eyebrow: "Erfahrungen"
+home_testimonials_title: "Was Mitglieder sagen"
+home_testimonials_1: "Zum ersten Mal hatte ich das Gefühl, es gibt eine Struktur, die Studierenden in der Schweiz wirklich hilft."
+home_testimonials_1_author: "Milica, ETH Zürich"
+home_testimonials_2: "Ausgezeichnete Mischung aus professionellem und freundlichem Ansatz. Events haben klaren Wert."
+home_testimonials_2_author: "Nikola, Genf"
+home_testimonials_3: "Das ist eine Organisation, die seriös aussieht und gleichzeitig warm zu Neulingen ist."
+home_testimonials_3_author: "Jelena, Lausanne"
+home_partners_eyebrow: "Partner"
+home_newsletter_eyebrow: "Newsletter"
+home_newsletter_title: "Abonnieren Sie neue Veranstaltungen und Ressourcen"
+home_newsletter_desc: "Eine E-Mail pro Monat, kein Spam, nur nützliche Informationen für Studierende und Alumni."
+
+# Common
+common_read_more: "Mehr lesen"
+common_back: "Zurück"
+common_home: "Startseite"
+common_search: "Suche"
+common_no_results: "Keine Ergebnisse gefunden"
+common_loading: "Wird geladen..."
+common_error: "Ein Fehler ist aufgetreten"

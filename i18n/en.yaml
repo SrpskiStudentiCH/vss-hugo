@@ -1,0 +1,143 @@
+# English - Translation Strings
+site_title: "Serbian Students in Switzerland"
+site_description: "Premium community for Serbian students in Switzerland"
+
+# Navigation
+nav_about: "About"
+nav_events: "Events"
+nav_blog: "Blog"
+nav_guide: "Guide"
+nav_alumni: "Alumni"
+nav_support: "Support"
+nav_media: "Media"
+nav_join: "Join Us"
+nav_contact: "Contact"
+nav_language: "Language"
+nav_menu: "Menu"
+nav_menu_open: "Open menu"
+nav_menu_close: "Close menu"
+theme_toggle: "Toggle theme"
+
+# Hero
+hero_title: "Community of Serbian Students in Switzerland"
+hero_subtitle: "Connecting students, alumni and partners through events, knowledge and support"
+hero_cta: "Learn More"
+hero_cta_join: "Join Now"
+
+# About
+about_title: "About"
+about_section_title: "Who We Are"
+about_description: "Serbian Students in Switzerland is a vibrant community helping students integrate, learn and succeed."
+about_mission: "Mission"
+about_mission_text: "We unite Serbian students in Switzerland through cultural events, academic support and business networking."
+about_values: "Our Values"
+about_founded: "Founded 2015"
+
+# Events
+events_title: "Events"
+events_upcoming: "Upcoming Events"
+events_past: "Past Events"
+events_view_all: "View All Events"
+events_register: "Register"
+events_more_info: "More Information"
+events_date: "Date"
+events_location: "Location"
+events_type: "Type"
+
+# Blog
+blog_title: "Blog"
+blog_latest: "Latest from Blog"
+blog_read_more: "Read More"
+blog_published: "Published"
+blog_author: "Author"
+blog_reading_time: "Reading Time"
+blog_related: "Related Articles"
+blog_share: "Share"
+
+# Guide
+guide_title: "Guide"
+guide_living: "How to Live in Switzerland"
+guide_studying: "How to Study in Switzerland"
+guide_cities: "Train Stations by Cities"
+
+# Join
+join_title: "Join Us"
+join_description: "Become Part of Our Community"
+join_benefits: "Membership Benefits"
+join_button: "Join Now"
+
+# Contact
+contact_title: "Contact"
+contact_form_name: "Name"
+contact_form_email: "Email"
+contact_form_message: "Message"
+contact_form_send: "Send"
+contact_email: "Email"
+contact_location: "Location"
+
+# Alumni
+alumni_title: "Alumni"
+alumni_description: "Our successful alumni making an impact in different fields"
+alumni_stories: "Success Stories"
+
+# Media
+media_title: "Media"
+media_gallery: "Gallery"
+media_videos: "Videos"
+
+# Support
+support_title: "Support"
+support_description: "Foundations and partners supporting our mission"
+
+# Footer
+footer_links: "Links"
+footer_legal: "Legal"
+footer_privacy: "Privacy"
+footer_terms: "Terms of Use"
+footer_contact: "Contact Us"
+footer_newsletter: "Subscribe to Our Newsletter"
+footer_follow: "Follow Us"
+
+# Home Page
+home_eyebrow: "Serbian Students in Switzerland"
+home_title: "Community connecting students, alumni and partners through knowledge, events and opportunities."
+home_description: "Premium student organization with clear identity, modern content and serious approach to networking in Switzerland."
+home_cta_join: "Join Now"
+home_stats_members: "members"
+home_stats_cities: "cities"
+home_stats_events: "events per year"
+home_why_eyebrow: "Why Us"
+home_why_title: "Platform built for students, not just for looks"
+home_why_networking_title: "Networking with Purpose"
+home_why_networking_desc: "Real connections with people who can help through studies, internships, careers and life in Switzerland."
+home_why_content_title: "Useful Content"
+home_why_content_desc: "Blog, guides and resources that stay relevant and are easily updated through markdown content."
+home_why_community_title: "Community That Lasts"
+home_why_community_desc: "Polished visual and content structure that can grow for years without a complete redesign."
+home_membership_eyebrow: "Membership"
+home_membership_title: "Why Join Us"
+home_membership_network_title: "Network Access"
+home_membership_network_desc: "Get access to people, events and information that accelerate your adaptation and progress."
+home_membership_volunteer_title: "Volunteer Opportunities"
+home_membership_volunteer_desc: "Participate in organizing events, communications, design, content creation and partnerships."
+home_testimonials_eyebrow: "Experiences"
+home_testimonials_title: "What Members Say"
+home_testimonials_1: "For the first time I felt there was a structure that truly helps students in Switzerland."
+home_testimonials_1_author: "Milica, ETH Zürich"
+home_testimonials_2: "Excellent mix of professional and friendly approach. Events have clear value."
+home_testimonials_2_author: "Nikola, Geneva"
+home_testimonials_3: "This is an organization that looks serious and is warm to newcomers at the same time."
+home_testimonials_3_author: "Jelena, Lausanne"
+home_partners_eyebrow: "Partners"
+home_newsletter_eyebrow: "Newsletter"
+home_newsletter_title: "Subscribe for new events and resources"
+home_newsletter_desc: "One email per month, no spam, just useful information for students and alumni."
+
+# Common
+common_read_more: "Read More"
+common_back: "Back"
+common_home: "Home"
+common_search: "Search"
+common_no_results: "No Results Found"
+common_loading: "Loading..."
+common_error: "An Error Occurred"

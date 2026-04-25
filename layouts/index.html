@@ -1,0 +1,139 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">{{ i18n "home_eyebrow" }}</p>
+      <h1>{{ i18n "home_title" }}</h1>
+      <p class="lead">{{ i18n "home_description" }}</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="{{ "join" | relLangURL }}">{{ i18n "home_cta_join" }}</a>
+        <a class="button button--secondary" href="{{ "events" | relLangURL }}">{{ i18n "nav_events" }}</a>
+      </div>
+    </div>
+    <div class="hero__panel glass-card">
+      <figure class="hero-image hero-image--large">
+        <img src="/images/original/history-photo.jpg" alt="{{ i18n "home_eyebrow" }}" loading="eager" width="400" height="400">
+      </figure>
+      <div class="stats">
+        <div><strong>120+</strong><span>{{ i18n "home_stats_members" }}</span></div>
+        <div><strong>5</strong><span>{{ i18n "home_stats_cities" }}</span></div>
+        <div><strong>24</strong><span>{{ i18n "home_stats_events" }}</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container section-spacing stats-strip">
+  <div class="stat-card"><strong>120+</strong><span>{{ i18n "home_stats_members" }}</span></div>
+  <div class="stat-card"><strong>5</strong><span>{{ i18n "home_stats_cities" }}</span></div>
+  <div class="stat-card"><strong>24</strong><span>{{ i18n "home_stats_events" }}</span></div>
+</section>
+
+<section class="container section-spacing">
+  <div class="section-heading">
+    <p class="eyebrow">{{ i18n "home_why_eyebrow" }}</p>
+    <h2>{{ i18n "home_why_title" }}</h2>
+  </div>
+  <div class="card-grid card-grid--three">
+    <article class="card">
+      <h3>{{ i18n "home_why_networking_title" }}</h3>
+      <p>{{ i18n "home_why_networking_desc" }}</p>
+    </article>
+    <article class="card">
+      <h3>{{ i18n "home_why_content_title" }}</h3>
+      <p>{{ i18n "home_why_content_desc" }}</p>
+    </article>
+    <article class="card">
+      <h3>{{ i18n "home_why_community_title" }}</h3>
+      <p>{{ i18n "home_why_community_desc" }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="container section-spacing">
+  <div class="section-heading">
+    <p class="eyebrow">{{ i18n "nav_events" }}</p>
+    <h2>{{ i18n "events_upcoming" }}</h2>
+  </div>
+  <div class="card-grid">
+    {{ range first 3 (where .Site.RegularPages "Section" "events") }}
+      <article class="card">
+        <a href="{{ .RelPermalink }}">
+          <p class="card__meta">{{ .Date.Format "2 Jan 2006" }}</p>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Summary }}</p>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<section class="container section-spacing">
+  <div class="section-heading">
+    <p class="eyebrow">{{ i18n "nav_blog" }}</p>
+    <h2>{{ i18n "blog_latest" }}</h2>
+  </div>
+  <div class="card-grid">
+    {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+      <article class="card">
+        <a href="{{ .RelPermalink }}">
+          <p class="card__meta">{{ .Date.Format "2 Jan 2006" }}</p>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Summary }}</p>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<section class="container section-spacing">
+  <div class="section-heading">
+    <p class="eyebrow">{{ i18n "home_membership_eyebrow" }}</p>
+    <h2>{{ i18n "home_membership_title" }}</h2>
+  </div>
+  <div class="card-grid card-grid--two">
+    <article class="card">
+      <h3>{{ i18n "home_membership_network_title" }}</h3>
+      <p>{{ i18n "home_membership_network_desc" }}</p>
+    </article>
+    <article class="card">
+      <h3>{{ i18n "home_membership_volunteer_title" }}</h3>
+      <p>{{ i18n "home_membership_volunteer_desc" }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="container section-spacing">
+  <div class="section-heading">
+    <p class="eyebrow">{{ i18n "home_testimonials_eyebrow" }}</p>
+    <h2>{{ i18n "home_testimonials_title" }}</h2>
+  </div>
+  <div class="card-grid card-grid--three">
+    <blockquote class="card quote-card"><p>{{ i18n "home_testimonials_1" }}</p><footer>{{ i18n "home_testimonials_1_author" }}</footer></blockquote>
+    <blockquote class="card quote-card"><p>{{ i18n "home_testimonials_2" }}</p><footer>{{ i18n "home_testimonials_2_author" }}</footer></blockquote>
+    <blockquote class="card quote-card"><p>{{ i18n "home_testimonials_3" }}</p><footer>{{ i18n "home_testimonials_3_author" }}</footer></blockquote>
+  </div>
+</section>
+
+<section class="container section-spacing partners-strip">
+  <p class="eyebrow">{{ i18n "home_partners_eyebrow" }}</p>
+  <div class="partner-logos">
+    <span>University Partners</span>
+    <span>Career Network</span>
+    <span>Student Support</span>
+    <span>Alumni Circle</span>
+  </div>
+</section>
+
+<section class="container section-spacing newsletter-card card">
+  <div>
+    <p class="eyebrow">{{ i18n "home_newsletter_eyebrow" }}</p>
+    <h2>{{ i18n "home_newsletter_title" }}</h2>
+    <p>{{ i18n "home_newsletter_desc" }}</p>
+  </div>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Email" aria-label="Email" required>
+    <button class="button button--primary" type="submit">{{ i18n "footer_newsletter" }}</button>
+  </form>
+</section>
+{{ end }}

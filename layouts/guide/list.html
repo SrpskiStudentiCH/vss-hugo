@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="container listing-page">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Student Guide</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="card-grid card-grid--three">
+    {{ range .Paginator.Pages }}
+      <article class="card">
+        <a href="{{ .RelPermalink }}">
+          <p class="card__meta">Guide</p>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Summary }}</p>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

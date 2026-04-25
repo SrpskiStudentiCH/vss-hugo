@@ -1,0 +1,74 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
+      <img
+        class="brand__logo"
+        src="{{ .Site.Params.brandLogo | default "/images/brand/logo-vss-uss.png" | relURL }}"
+        alt="{{ .Site.Title }}"
+        width="56"
+        height="56"
+        loading="eager"
+        decoding="async"
+      >
+      <span class="brand__text">{{ .Site.Title }}</span>
+    </a>
+    
+    <div class="site-header__controls">
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="{{ i18n "theme_toggle" }}" title="{{ i18n "theme_toggle" }}">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5"/><path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m3.08 3.08l4.24 4.24M1 12h6m6 0h6m-17.78 7.78l4.24-4.24m3.08-3.08l4.24-4.24"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="{{ i18n "nav_menu" }}" data-label-open="{{ i18n "nav_menu_open" }}" data-label-close="{{ i18n "nav_menu_close" }}">
+      <span class="menu-toggle__label">{{ i18n "nav_menu" }}</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      {{ $home := .Site.Home.RelPermalink }}
+      {{ $fallbackToHome := slice "guide" "support" "media" }}
+      {{ $navItems := slice
+        (dict "key" "nav_about" "slug" "about")
+        (dict "key" "nav_events" "slug" "events")
+        (dict "key" "nav_blog" "slug" "blog")
+        (dict "key" "nav_guide" "slug" "guide")
+        (dict "key" "nav_alumni" "slug" "alumni")
+        (dict "key" "nav_support" "slug" "support")
+        (dict "key" "nav_media" "slug" "media")
+        (dict "key" "nav_join" "slug" "join")
+        (dict "key" "nav_contact" "slug" "contact")
+      }}
+
+      {{ range $navItems }}
+        {{ $slug := .slug }}
+        {{ $target := $slug | relLangURL }}
+        {{ if in $fallbackToHome $slug }}
+          {{ $target = $home }}
+        {{ end }}
+
+        {{ $isActive := eq $.Section $slug }}
+
+        <a href="{{ $target }}" {{ if $isActive }}aria-current="page"{{ end }}>{{ i18n .key }}</a>
+      {{ end }}
+
+      <span class="site-nav__langs" role="group" aria-label="{{ i18n "nav_language" }}">
+        {{ range .Site.Languages }}
+          {{ $code := .Lang }}
+          {{ $target := "" }}
+          {{ if eq $.Lang $code }}
+            {{ $target = $.RelPermalink }}
+          {{ else }}
+            {{ range $.AllTranslations }}
+              {{ if eq .Lang $code }}{{ $target = .RelPermalink }}{{ end }}
+            {{ end }}
+          {{ end }}
+          {{ if eq $target "" }}
+            {{ range $.Sites }}
+              {{ if eq .Language.Lang $code }}{{ $target = .Home.RelPermalink }}{{ end }}
+            {{ end }}
+          {{ end }}
+          <a href="{{ $target }}" lang="{{ $code }}" {{ if eq $.Lang $code }}aria-current="page"{{ end }}>{{ upper $code }}</a>
+        {{ end }}
+      </span>
+    </nav>
+  </div>
+</header>

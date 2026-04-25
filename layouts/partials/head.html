@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+{{ $description := .Description | default .Site.Params.description }}
+{{ $brandLogo := .Site.Params.brandLogo | default "/images/brand/logo-vss-uss.png" }}
+{{ $socialImage := .Site.Params.ogImage | default $brandLogo }}
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="icon" type="image/png" href="{{ $brandLogo | relURL }}">
+<link rel="apple-touch-icon" href="{{ $brandLogo | relURL }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ .Lang }}">
+<meta property="og:image" content="{{ $socialImage | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"name": "{{ .Site.Title }}",
+	"url": "{{ .Site.BaseURL }}",
+	"description": "{{ $description }}",
+	"logo": "{{ $brandLogo | absURL }}"
+}
+</script>
+{{ $styles := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css" "enableSourceMap" true) | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">

@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="container content-page">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Članstvo</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="card-grid card-grid--two">
+    {{ range .Pages }}
+      <article class="card">
+        <a href="{{ .RelPermalink }}">
+          <p class="card__meta">{{ .Section | humanize }}</p>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Summary }}</p>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

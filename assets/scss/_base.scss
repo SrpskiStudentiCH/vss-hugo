@@ -1,0 +1,104 @@
+// ============================================================================
+// BASE STYLES
+// ============================================================================
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(230, 0, 38, 0.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(0, 87, 184, 0.10), transparent 24%),
+    var(--bg);
+  background-attachment: fixed;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at top left, rgba(255, 77, 109, 0.04), transparent 28%),
+    radial-gradient(circle at top right, rgba(102, 179, 255, 0.04), transparent 24%),
+    var(--bg);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 3px var(--focus-ring);
+  }
+}
+
+input,
+textarea {
+  font: inherit;
+  transition: border-color 0.2s ease;
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--focus-ring);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Utility Classes
+.container {
+  width: calc(100% - calc(var(--container-padding) * 2));
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.section-spacing {
+  padding: 2.5rem 0 5.5rem;
+
+  @media (max-width: 640px) {
+    padding: 1.75rem 0 3.25rem;
+  }
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}

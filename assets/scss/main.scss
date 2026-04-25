@@ -1,0 +1,25 @@
+// ============================================================================
+// HUGO WEBSITE MAIN STYLESHEET
+// ============================================================================
+// Modularized SCSS architecture for maintainability and performance
+
+// 1. Design System Variables (colors, spacing, typography, z-index)
+@import 'variables';
+
+// 2. Base Styles (reset, html, body, global utilities)
+@import 'base';
+
+// 3. Typography (headings, text, prose)
+@import 'typography';
+
+// 4. Components (buttons, cards, forms, grids, etc.)
+@import 'components';
+
+// 5. Layout & Structure (header, nav, footer, page layouts)
+@import 'layout';
+
+// ============================================================================
+// CSS BUILD COMPLETE
+// ============================================================================
+// This stylesheet is automatically compiled and minified by Hugo
+// Last updated: 2026

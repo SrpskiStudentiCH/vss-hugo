@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="container content-page">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Kontakt</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="card-grid card-grid--two">
+    <div class="card prose">
+      {{ .Content }}
+    </div>
+    <form class="card contact-form">
+      <label>Ime<input type="text" name="name"></label>
+      <label>Email<input type="email" name="email"></label>
+      <label>Poruka<textarea name="message" rows="6"></textarea></label>
+      <button class="button button--primary" type="submit">Pošalji</button>
+    </form>
+  </div>
+</article>
+{{ end }}

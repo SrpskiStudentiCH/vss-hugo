@@ -1,0 +1,143 @@
+# Srpski - Translation Strings
+site_title: "Srpski studenti u Švajcarskoj"
+site_description: "Premium zajednica srpskih studenata u Švajcarskoj"
+
+# Navigation
+nav_about: "O nama"
+nav_events: "Događaji"
+nav_blog: "Blog"
+nav_guide: "Vodič"
+nav_alumni: "Alumni"
+nav_support: "Podrška"
+nav_media: "Mediji"
+nav_join: "Učlaniti se"
+nav_contact: "Kontakt"
+nav_language: "Jezik"
+nav_menu: "Meni"
+nav_menu_open: "Otvori meni"
+nav_menu_close: "Zatvori meni"
+theme_toggle: "Promeni temu"
+
+# Hero
+hero_title: "Zajednica srpskih studenata u Švajcarskoj"
+hero_subtitle: "Povezujemo studente, alumnije i partnere kroz događaje, znanje i podrške"
+hero_cta: "Saznaj više"
+hero_cta_join: "Učlaniti se sada"
+
+# About
+about_title: "O nama"
+about_section_title: "Ko smo mi"
+about_description: "Srpski studenti u Švajcarskoj je voljena zajednica koja pomaže studentima da se uklapaju, nauče i budu uspešni."
+about_mission: "Misija"
+about_mission_text: "Ujedinjujemo srpske studente u Švajcarskoj kroz kulturne događaje, akademsku podršku i poslovne mreže."
+about_values: "Naše vrednosti"
+about_founded: "Osnovano 2015"
+
+# Events
+events_title: "Događaji"
+events_upcoming: "Nadolazeći događaji"
+events_past: "Prošli događaji"
+events_view_all: "Pogledaj sve događaje"
+events_register: "Prijavi se"
+events_more_info: "Više informacija"
+events_date: "Datum"
+events_location: "Lokacija"
+events_type: "Tip"
+
+# Blog
+blog_title: "Blog"
+blog_latest: "Najnovije iz bloga"
+blog_read_more: "Čitaj više"
+blog_published: "Objavljeno"
+blog_author: "Autor"
+blog_reading_time: "Vreme čitanja"
+blog_related: "Povezani članci"
+blog_share: "Podeli"
+
+# Guide
+guide_title: "Vodič"
+guide_living: "Kako živeti u Švajcarskoj"
+guide_studying: "Kako studirati u Švajcarskoj"
+guide_cities: "Željezničke postaje po gradovima"
+
+# Join
+join_title: "Učlaniti se"
+join_description: "Postani deo naše zajednice"
+join_benefits: "Beneificije članstva"
+join_button: "Učlaniti se sada"
+
+# Contact
+contact_title: "Kontakt"
+contact_form_name: "Ime"
+contact_form_email: "Email"
+contact_form_message: "Poruka"
+contact_form_send: "Pošalji"
+contact_email: "Email"
+contact_location: "Lokacija"
+
+# Alumni
+alumni_title: "Alumni"
+alumni_description: "Naši uspešni alumni koji se razlikuju u različitim poljima"
+alumni_stories: "Priče uspeha"
+
+# Media
+media_title: "Mediji"
+media_gallery: "Galerija"
+media_videos: "Videi"
+
+# Support
+support_title: "Podrška"
+support_description: "Fondaci i partneri koji nam podržavaju"
+
+# Footer
+footer_links: "Linkovi"
+footer_legal: "Legalno"
+footer_privacy: "Privatnost"
+footer_terms: "Uslovi korišćenja"
+footer_contact: "Kontaktiraj nas"
+footer_newsletter: "Prijavite se na naš newsletter"
+footer_follow: "Pratite nas"
+
+# Home Page
+home_eyebrow: "Srpski studenti u Švajcarskoj"
+home_title: "Zajednica koja povezuje studente, alumnije i partnere kroz znanje, događaje i prilike."
+home_description: "Premium studentska organizacija sa jasnim identitetom, modernim sadržajem i ozbiljnim pristupom umrežavanju u Švajcarskoj."
+home_cta_join: "Pridruži se"
+home_stats_members: "članova"
+home_stats_cities: "gradova"
+home_stats_events: "događaja godišnje"
+home_why_eyebrow: "Zašto mi"
+home_why_title: "Platforma koja radi za studente, ne samo za izgled"
+home_why_networking_title: "Networking sa svrhom"
+home_why_networking_desc: "Pravi kontakt sa ljudima koji mogu pomoći kroz studije, praksu, karijeru i život u Švajcarskoj."
+home_why_content_title: "Korisni sadržaji"
+home_why_content_desc: "Blog, guide i resursi koji ostaju relevantni i lako se ažuriraju kroz markdown sadržaj."
+home_why_community_title: "Zajednica koja traje"
+home_why_community_desc: "Odbrušena vizuelna i sadržajna struktura koja može da raste kroz godine bez redizajna iz početka."
+home_membership_eyebrow: "Članstvo"
+home_membership_title: "Zašto da se priključiš"
+home_membership_network_title: "Pristup mreži"
+home_membership_network_desc: "Dobijaš pristup ljudima, događajima i informacijama koje ubrzavaju adaptaciju i napredak."
+home_membership_volunteer_title: "Volonterske prilike"
+home_membership_volunteer_desc: "Možeš da se uključiš u organizaciju događaja, komunikaciju, dizajn, sadržaj i partnerstva."
+home_testimonials_eyebrow: "Iskustva"
+home_testimonials_title: "Šta članovi kažu"
+home_testimonials_1: "Prvi put sam dobila osećaj da postoji struktura koja stvarno pomaže studentima u Švajcarskoj."
+home_testimonials_1_author: "Milica, ETH Zürich"
+home_testimonials_2: "Odlična mešavina profesionalnog i prijateljskog pristupa. Događaji imaju jasnu vrednost."
+home_testimonials_2_author: "Nikola, Geneva"
+home_testimonials_3: "Ovo je organizacija koja izgleda ozbiljno i istovremeno je topla prema novim ljudima."
+home_testimonials_3_author: "Jelena, Lausanne"
+home_partners_eyebrow: "Partneri"
+home_newsletter_eyebrow: "Newsletter"
+home_newsletter_title: "Prijavi se za nove događaje i resurse"
+home_newsletter_desc: "Jedan e-mail mesečno, bez spam-a, samo korisne informacije za studente i alumnije."
+
+# Common
+common_read_more: "Čitaj više"
+common_back: "Nazad"
+common_home: "Početna"
+common_search: "Pretraga"
+common_no_results: "Nema rezultata"
+common_loading: "Učitavanje..."
+common_error: "Došlo je do greške"

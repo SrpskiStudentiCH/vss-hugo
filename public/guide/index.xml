@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Student Guide on Srpski studenti u Švajcarskoj</title>
+    <link>http://localhost:1313/guide/</link>
+    <description>Recent content in Student Guide on Srpski studenti u Švajcarskoj</description>
+    <generator>Hugo</generator>
+    <language>sr</language>
+    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAQ</title>
+      <link>http://localhost:1313/guide/faq/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guide/faq/</guid>
+      <description>&lt;h2 id=&#34;kako-da-se-pridružim&#34;&gt;Kako da se pridružim?&lt;/h2&gt;&#xA;&lt;p&gt;Popuni formular na stranici Postani član i prati naredne događaje organizacije.&lt;/p&gt;&#xA;&lt;h2 id=&#34;da-li-mogu-da-volontiram&#34;&gt;Da li mogu da volontiram?&lt;/h2&gt;&#xA;&lt;p&gt;Da. Volonteri su važan deo organizacije i često pomažu oko događaja, sadržaja i komunikacije.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Smeštaj</title>
+      <link>http://localhost:1313/guide/sme%C5%A1taj/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guide/sme%C5%A1taj/</guid>
+      <description>&lt;p&gt;Fokus je na realnim koracima: gde tražiti, kako konkurisati i na šta obratiti pažnju kod ugovora i troškova.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stipendije</title>
+      <link>http://localhost:1313/guide/stipendije/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guide/stipendije/</guid>
+      <description>&lt;p&gt;Ovde ide pregled stipendija, fondova i konkurisanja, uz fokus na praktične rokove i korisne izvore.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Studiranje i život u Švajcarskoj</title>
+      <link>http://localhost:1313/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</guid>
+      <description>&lt;h2 id=&#34;šta-treba-da-znaš-odmah&#34;&gt;Šta treba da znaš odmah&lt;/h2&gt;&#xA;&lt;p&gt;Ova stranica je praktični sloj za studente koji prvi put dolaze u Švajcarsku i žele da znaju kako funkcionišu gradski ritam, budžet i studentska rutina.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Studiranje u Švajcarskoj</title>
+      <link>http://localhost:1313/guide/studiranje-u-%C5%A1vajcarskoj/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guide/studiranje-u-%C5%A1vajcarskoj/</guid>
+      <description>&lt;h2 id=&#34;aufenthaltsbewilligung&#34;&gt;Aufenthaltsbewilligung&lt;/h2&gt;&#xA;&lt;p&gt;Za studiranje u Švajcarskoj potrebna ti je boravišna dozvola, a u nekim slučajevima i viza. Korisne informacije:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.eda.admin.ch/countries/serbia/de/home/visa/aufenthalt/studieren.html&#34;&gt;https://www.eda.admin.ch/countries/serbia/de/home/visa/aufenthalt/studieren.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.eda.admin.ch/eda/de/home/einreise-aufenthalt-schweiz/visabestimmungen-visumantragsformular.html&#34;&gt;https://www.eda.admin.ch/eda/de/home/einreise-aufenthalt-schweiz/visabestimmungen-visumantragsformular.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;finansiranje&#34;&gt;Finansiranje&lt;/h2&gt;&#xA;&lt;p&gt;Stipendijski sistem je kantonalno uređen i razlikuje se od kantona do kantona. Preporuka je da se prvo informišeš na samom univerzitetu.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Univerziteti i visoke škole</title>
+      <link>http://localhost:1313/guide/univerziteti-i-visoke-%C5%A1kole/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guide/univerziteti-i-visoke-%C5%A1kole/</guid>
+      <description>&lt;h2 id=&#34;univerziteti&#34;&gt;Univerziteti&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ETH Zürich: &lt;a href=&#34;https://ethz.ch/de.html&#34;&gt;https://ethz.ch/de.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;EPFL Lausanne: &lt;a href=&#34;https://www.epfl.ch/fr/&#34;&gt;https://www.epfl.ch/fr/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Basel: &lt;a href=&#34;https://www.unibas.ch/de&#34;&gt;https://www.unibas.ch/de&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Bern: &lt;a href=&#34;https://www.unibe.ch/&#34;&gt;https://www.unibe.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Freiburg: &lt;a href=&#34;https://www3.unifr.ch/home/de/&#34;&gt;https://www3.unifr.ch/home/de/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Université de Genève: &lt;a href=&#34;https://www.unige.ch/&#34;&gt;https://www.unige.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Université de Lausanne: &lt;a href=&#34;http://www.unil.ch/index.html&#34;&gt;http://www.unil.ch/index.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Luzern: &lt;a href=&#34;https://www.unilu.ch/&#34;&gt;https://www.unilu.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität St. Gallen (HSG): &lt;a href=&#34;https://www.unisg.ch/&#34;&gt;https://www.unisg.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Zürich: &lt;a href=&#34;https://www.uzh.ch/de.html&#34;&gt;https://www.uzh.ch/de.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;fachhochschulen&#34;&gt;Fachhochschulen&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ZHAW: &lt;a href=&#34;https://www.zhaw.ch/de/hochschule/&#34;&gt;https://www.zhaw.ch/de/hochschule/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;ZHdK: &lt;a href=&#34;https://www.zhdk.ch/&#34;&gt;https://www.zhdk.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;HSLU: &lt;a href=&#34;https://www.hslu.ch/de-ch/&#34;&gt;https://www.hslu.ch/de-ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;FHNW: &lt;a href=&#34;https://www.fhnw.ch/de/startseite&#34;&gt;https://www.fhnw.ch/de/startseite&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;BFH: &lt;a href=&#34;https://www.bfh.ch/de/&#34;&gt;https://www.bfh.ch/de/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;SUPSI: &lt;a href=&#34;http://www.supsi.ch/home.html&#34;&gt;http://www.supsi.ch/home.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;FHO: &lt;a href=&#34;https://www.fho.ch/&#34;&gt;https://www.fho.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;HES-SO: &lt;a href=&#34;https://www.hes-so.ch/de/homepage-hes-so-1679.html&#34;&gt;https://www.hes-so.ch/de/homepage-hes-so-1679.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

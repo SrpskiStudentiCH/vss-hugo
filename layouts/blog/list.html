@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="container listing-page listing-page--blog">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Blog</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    <div class="search-bar">
+      <input id="post-search" type="search" placeholder="Pretraži blog..." aria-label="Pretraži blog">
+    </div>
+  </header>
+
+  <div class="blog-layout">
+    <div class="card-grid blog-list" data-search-results>
+      {{ range .Paginator.Pages }}
+        <article class="card post-card" data-post-card data-title="{{ .Title | lower }}" data-tags="{{ delimit .Params.tags "," }}">
+          <a href="{{ .RelPermalink }}">
+            <p class="card__meta">{{ .Date.Format "2 Jan 2006" }}</p>
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Summary }}</p>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+    <aside class="sidebar-card card">
+      <h2>Popularno</h2>
+      {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+        <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+      {{ end }}
+    </aside>
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

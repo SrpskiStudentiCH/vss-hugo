@@ -1,0 +1,87 @@
+// ============================================================================
+// DESIGN SYSTEM VARIABLES
+// ============================================================================
+
+// Light Mode (Default)
+:root {
+  // Color Palette
+  --bg: #f5f3ee;
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-strong: #ffffff;
+  --text: #122032;
+  --text-secondary: #4f5d6b;
+  --accent: #e60026;
+  --accent-strong: #bf001f;
+  --accent-secondary: #0057b8;
+  --link: #004ea4;
+  --border: rgba(18, 32, 50, 0.13);
+  --header-bg: rgba(245, 243, 238, 0.62);
+  --header-bg-scrolled: rgba(245, 243, 238, 0.9);
+  --focus-ring: rgba(0, 87, 184, 0.32);
+  --shadow: 0 24px 70px rgba(11, 26, 43, 0.12);
+  
+  // Spacing
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 5rem;
+  
+  // Border Radius
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
+  
+  // Layout
+  --container: 1160px;
+  --container-padding: 1rem;
+  
+  // Typography
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Manrope", system-ui, sans-serif;
+  --tracking-tight: -0.025em;
+  --tracking-heading: -0.032em;
+  --tracking-nav: 0.012em;
+  --tracking-label: 0.14em;
+  --tracking-button: 0.018em;
+  
+  // Z-index
+  --z-sticky: 50;
+  --z-dropdown: 100;
+  --z-modal: 200;
+}
+
+// Dark Mode
+[data-theme="dark"] {
+  --bg: #070d15;
+  --surface: rgba(14, 22, 35, 0.78);
+  --surface-strong: #111c2d;
+  --text: #edf2f8;
+  --text-secondary: #acb6c4;
+  --accent: #ff5a77;
+  --accent-strong: #ff3358;
+  --accent-secondary: #73bcff;
+  --link: #8bc9ff;
+  --border: rgba(237, 242, 248, 0.12);
+  --header-bg: rgba(7, 13, 21, 0.58);
+  --header-bg-scrolled: rgba(7, 13, 21, 0.88);
+  --focus-ring: rgba(115, 188, 255, 0.34);
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.52);
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto !important;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

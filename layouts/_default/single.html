@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="content-page">
+  <section class="page-hero container">
+    <p class="eyebrow">{{ .Section | humanize }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    {{ with .Params.image }}
+      <figure class="hero-image">
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      </figure>
+    {{ end }}
+  </section>
+
+  <section class="container prose">
+    {{ if .Params.toc }}
+      <aside class="toc">{{ .TableOfContents }}</aside>
+    {{ end }}
+    {{ .Content }}
+  </section>
+</article>
+{{ end }}

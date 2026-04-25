@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="container listing-page listing-page--events">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Događaji</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    <div class="filter-bar">
+      <button type="button" class="filter-pill is-active" data-filter="all">Svi</button>
+      <button type="button" class="filter-pill" data-filter="Zürich">Zürich</button>
+      <button type="button" class="filter-pill" data-filter="Bern">Bern</button>
+      <button type="button" class="filter-pill" data-filter="networking">Networking</button>
+    </div>
+  </header>
+
+  <div class="card-grid event-list" data-event-list>
+    {{ range .Paginator.Pages }}
+      <article class="card event-card" data-event-card data-city="{{ .Params.city }}" data-type="{{ .Params.event_type }}">
+        <a href="{{ .RelPermalink }}">
+          <p class="card__meta">{{ .Date.Format "2 Jan 2006" }}</p>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Summary }}</p>
+          <p class="event-badge">{{ .Params.city }} · {{ .Params.event_type }}</p>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

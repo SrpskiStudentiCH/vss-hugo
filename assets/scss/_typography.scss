@@ -1,0 +1,112 @@
+// ============================================================================
+// TYPOGRAPHY
+// ============================================================================
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: var(--tracking-heading);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 6vw, 5.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 3vw, 1.875rem);
+  letter-spacing: var(--tracking-tight);
+}
+
+h4, h5, h6 {
+  font-size: 1.125rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+  letter-spacing: 0.002em;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  font-size: 0.78rem;
+  color: var(--accent-secondary);
+  font-weight: 700;
+}
+
+.prose {
+  max-width: 760px;
+  line-height: 1.8;
+  color: var(--text);
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.024em;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.016em;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul, ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  blockquote {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+    color: var(--text-secondary);
+  }
+
+  code {
+    background: var(--surface-strong);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9em;
+  }
+
+  pre {
+    background: var(--surface-strong);
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+
+    code {
+      background: none;
+      padding: 0;
+    }
+  }
+}
