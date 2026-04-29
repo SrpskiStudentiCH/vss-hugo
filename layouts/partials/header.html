@@ -15,8 +15,8 @@
     
     <div class="site-header__controls">
       <button class="theme-toggle" type="button" id="theme-toggle" aria-label="{{ i18n "theme_toggle" }}" title="{{ i18n "theme_toggle" }}">
-        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5"/><path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m3.08 3.08l4.24 4.24M1 12h6m6 0h6m-17.78 7.78l4.24-4.24m3.08-3.08l4.24-4.24"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/></svg>
       </button>
     </div>
 
@@ -24,31 +24,31 @@
       <span class="menu-toggle__label">{{ i18n "nav_menu" }}</span>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      {{ $home := .Site.Home.RelPermalink }}
-      {{ $fallbackToHome := slice "guide" "support" "media" }}
-      {{ $navItems := slice
-        (dict "key" "nav_about" "slug" "about")
-        (dict "key" "nav_events" "slug" "events")
-        (dict "key" "nav_blog" "slug" "blog")
-        (dict "key" "nav_guide" "slug" "guide")
-        (dict "key" "nav_alumni" "slug" "alumni")
-        (dict "key" "nav_support" "slug" "support")
-        (dict "key" "nav_media" "slug" "media")
-        (dict "key" "nav_join" "slug" "join")
-        (dict "key" "nav_contact" "slug" "contact")
-      }}
+      <!-- O Nama Dropdown -->
+      <div class="nav-dropdown">
+        <button class="nav-dropdown__toggle" aria-expanded="false" aria-haspopup="true">
+          {{ i18n "nav_about" }}
+          <svg class="nav-dropdown__icon" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown__menu">
+          <a href="{{ "about" | relLangURL }}">{{ i18n "nav_about_history" }}</a>
+          <a href="{{ "about" | relLangURL }}#naš-tim">{{ i18n "nav_about_team" }}</a>
+          <a href="{{ "about" | relLangURL }}#dokumenta">{{ i18n "nav_about_documents" }}</a>
+          <a href="{{ "alumni" | relLangURL }}">{{ i18n "nav_alumni" }}</a>
+        </div>
+      </div>
 
-      {{ range $navItems }}
-        {{ $slug := .slug }}
-        {{ $target := $slug | relLangURL }}
-        {{ if in $fallbackToHome $slug }}
-          {{ $target = $home }}
-        {{ end }}
+      <!-- Studiranje (single link to guide) -->
+      <a href="{{ "guide" | relLangURL }}" class="nav-link">{{ i18n "nav_studying" }}</a>
 
-        {{ $isActive := eq $.Section $slug }}
+      <!-- Aktivnosti -->
+      <a href="{{ "events" | relLangURL }}" class="nav-link">{{ i18n "nav_activities" }}</a>
 
-        <a href="{{ $target }}" {{ if $isActive }}aria-current="page"{{ end }}>{{ i18n .key }}</a>
-      {{ end }}
+      <!-- Blog -->
+      <a href="{{ "blog" | relLangURL }}" class="nav-link">{{ i18n "nav_blog" }}</a>
+
+      <!-- Kontakt -->
+      <a href="{{ "contact" | relLangURL }}" class="nav-link">{{ i18n "nav_contact" }}</a>
 
       <span class="site-nav__langs" role="group" aria-label="{{ i18n "nav_language" }}">
         {{ range .Site.Languages }}

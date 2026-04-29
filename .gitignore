@@ -1,0 +1,46 @@
+# Hugo generated files
+/public/
+/resources/_gen/
+
+# Hugo cache
+.hugo_build.lock
+
+# Node dependencies (ako koristiš npm/yarn/pnpm)
+/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+.idea/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Temporary files
+*.tmp
+*.swp
+
+# Backup files
+*~
+
+# Netlify / Vercel
+.vercel/
+.netlify/
+
+# Mac resource forks
+._*
+
+# Hugo modules cache
+.go/pkg/

@@ -1,0 +1,52 @@
+{{ define "main" }}
+<article class="container content-page">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">Vodič</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="accordion">
+    {{ $raw := .RawContent }}
+    {{ $index := 0 }}
+    
+    {{ $items := findRE "(?s)^###.*?(?=^---|$)" $raw 1000 }}
+    
+    {{ range $items }}
+      {{ $trimmed := trim . " \n" }}
+      {{ $lines := split . "\n" }}
+      {{ $heading := "" }}
+      {{ $bodyStart := 1 }}
+      
+      {{ with index $lines 0 }}
+        {{ if hasPrefix . "###" }}
+          {{ $heading = replace . "###" "" }}
+          {{ $heading = trim $heading " " }}
+        {{ end }}
+      {{ end }}
+      
+      {{ if gt (len $heading) 0 }}
+        {{ $bodyLines := slice $lines $bodyStart }}
+        {{ $bodyContent := delimit $bodyLines "\n" }}
+        
+        <div class="accordion-item" data-accordion-index="{{ $index }}">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span class="accordion-title">{{ $heading }}</span>
+            <svg class="accordion-chevron" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              {{ $bodyContent | markdownify }}
+            </div>
+          </div>
+        </div>
+        
+        {{ $index = add $index 1 }}
+      {{ end }}
+    {{ end }}
+  </div>
+</article>
+{{ end }}

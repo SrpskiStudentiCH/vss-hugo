@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js-enabled');
+
 // ============================================================================
 // THEME MANAGEMENT (Dark Mode)
 // ============================================================================
@@ -57,7 +59,25 @@ if (window.matchMedia) {
 	});
 }
 
-document.documentElement.classList.add('js-enabled');
+// ============================================================================
+// ACCORDION
+// ============================================================================
+
+function initializeAccordion() {
+	document.querySelectorAll('.accordion-trigger').forEach((trigger) => {
+		trigger.addEventListener('click', (e) => {
+			e.preventDefault();
+			const item = trigger.closest('.accordion-item');
+			const isExpanded = item.getAttribute('data-expanded') === 'true';
+
+			// Toggle current item
+			item.setAttribute('data-expanded', String(!isExpanded));
+			trigger.setAttribute('aria-expanded', String(!isExpanded));
+		});
+	});
+}
+
+initializeAccordion();
 
 // ============================================================================
 // MOBILE MENU TOGGLE
@@ -99,7 +119,133 @@ if (menuToggle && siteNav) {
 	updateMenuState(false);
 }
 
+// ============================================================================
+// DROPDOWN NAVIGATION (Hover only, no click required)
+// ============================================================================
+
+function initializeDropdowns() {
+
+	// Use pointerenter/pointerleave on the whole dropdown for robust hover behavior
+	document.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
+		const toggle = dropdown.querySelector('.nav-dropdown__toggle');
+		const menu = dropdown.querySelector('.nav-dropdown__menu');
+
+		if (!toggle || !menu) return;
+
+		let leaveTimer = null;
+
+		const open = () => {
+			document.querySelectorAll('.nav-dropdown__toggle').forEach((t) => t.setAttribute('aria-expanded', 'false'));
+			toggle.setAttribute('aria-expanded', 'true');
+			if (leaveTimer) { clearTimeout(leaveTimer); leaveTimer = null; }
+		};
+
+		const close = () => {
+			toggle.setAttribute('aria-expanded', 'false');
+			if (leaveTimer) { clearTimeout(leaveTimer); leaveTimer = null; }
+		};
+
+		// Pointer events are more reliable across input types than mouseenter/mouseleave
+		dropdown.addEventListener('pointerenter', open);
+		dropdown.addEventListener('pointerleave', () => {
+			// small delay to avoid flicker when moving between toggle and menu
+			leaveTimer = setTimeout(close, 80);
+		});
+
+		// Keyboard accessibility: open on focus, close on blur
+		toggle.addEventListener('focus', open);
+		toggle.addEventListener('blur', () => {
+			// ensure we don't close while menu receives focus
+			setTimeout(() => {
+				if (!dropdown.contains(document.activeElement)) close();
+			}, 10);
+		});
+
+		// Close when user clicks a link inside the menu
+		menu.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('click', () => {
+				close();
+			});
+		});
+	});
+
+	// Close all dropdowns when clicking outside
+	const closeDropdownsOnClickOutside = (e) => {
+		if (!e.target.closest('.nav-dropdown')) {
+			document.querySelectorAll('.nav-dropdown__toggle').forEach((toggle) => {
+				toggle.setAttribute('aria-expanded', 'false');
+			});
+		}
+	};
+
+	document.addEventListener('click', closeDropdownsOnClickOutside);
+
+	// Close on Escape key
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape') {
+			document.querySelectorAll('.nav-dropdown__toggle').forEach((toggle) => {
+				toggle.setAttribute('aria-expanded', 'false');
+			});
+		}
+	});
+}
+
+initializeDropdowns();
+
+// ============================================================================
+// EVENTS FILTER
+// ============================================================================
+
+function initializeEventFilters() {
+	const filterBar = document.querySelector('.filter-bar');
+	if (!filterBar) return;
+
+	const pills = Array.from(filterBar.querySelectorAll('.filter-pill'));
+	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
+
+	const applyFilter = (filter) => {
+		const f = (filter || 'all').toString().toLowerCase();
+		cards.forEach((card) => {
+			const city = (card.dataset.city || '').toString().toLowerCase();
+			const type = (card.dataset.type || '').toString().toLowerCase();
+			if (f === 'all' || f === city || f === type) {
+				card.style.display = '';
+			} else {
+				card.style.display = 'none';
+			}
+		});
+	};
+
+	pills.forEach((pill) => {
+		// accessibility state
+		pill.setAttribute('aria-pressed', pill.classList.contains('is-active') ? 'true' : 'false');
+
+		pill.addEventListener('click', (e) => {
+			e.preventDefault();
+			const filter = pill.dataset.filter;
+
+			// active visual
+			pills.forEach((p) => {
+				const active = p === pill;
+				p.classList.toggle('is-active', active);
+				p.setAttribute('aria-pressed', String(active));
+			});
+
+			applyFilter(filter);
+		});
+	});
+
+	// apply initial active pill filter
+	const active = pills.find((p) => p.classList.contains('is-active'));
+	applyFilter(active ? active.dataset.filter : 'all');
+}
+
+initializeEventFilters();
+
+// ============================================================================
 // Sticky header polish on scroll
+// ============================================================================
+
 const siteHeader = document.querySelector('.site-header');
 if (siteHeader) {
 	const syncHeaderState = () => {
@@ -109,37 +255,3 @@ if (siteHeader) {
 	syncHeaderState();
 	window.addEventListener('scroll', syncHeaderState, { passive: true });
 }
-
-// ============================================================================
-// POST SEARCH
-// ============================================================================
-
-const postSearch = document.querySelector('#post-search');
-if (postSearch) {
-	postSearch.addEventListener('input', (event) => {
-		const query = event.target.value.toLowerCase();
-		document.querySelectorAll('[data-post-card]').forEach((card) => {
-			const title = card.dataset.title || '';
-			const tags = card.dataset.tags || '';
-			card.style.display = title.includes(query) || tags.includes(query) ? '' : 'none';
-		});
-	});
-}
-
-// ============================================================================
-// EVENT FILTERING
-// ============================================================================
-
-document.querySelectorAll('[data-filter]').forEach((button) => {
-	button.addEventListener('click', () => {
-		const filter = button.dataset.filter;
-		document.querySelectorAll('[data-filter]').forEach((item) => item.classList.remove('is-active'));
-		button.classList.add('is-active');
-		document.querySelectorAll('[data-event-card]').forEach((card) => {
-			const city = card.dataset.city || '';
-			const type = card.dataset.type || '';
-			const visible = filter === 'all' || city === filter || type === filter;
-			card.style.display = visible ? '' : 'none';
-		});
-	});
-});

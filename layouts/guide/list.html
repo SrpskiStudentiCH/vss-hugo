@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="container listing-page">
+<article class="container content-page">
   <header class="page-hero">
     {{ partial "breadcrumbs.html" . }}
     <p class="eyebrow">Student Guide</p>
@@ -7,18 +7,61 @@
     {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
   </header>
 
-  <div class="card-grid card-grid--three">
-    {{ range .Paginator.Pages }}
-      <article class="card">
-        <a href="{{ .RelPermalink }}">
-          <p class="card__meta">Guide</p>
-          <h2>{{ .Title }}</h2>
-          <p>{{ .Summary }}</p>
-        </a>
-      </article>
-    {{ end }}
-  </div>
-
-  {{ template "_internal/pagination.html" . }}
-</section>
+  {{ if eq .Kind "section" }}
+    <!-- Display content as accordion with only titles shown when closed -->
+    <div class="accordion">
+      {{ $raw := .Content }}
+      {{ $sections := split $raw "<hr>" }}
+      {{ $index := 0 }}
+      
+      {{ range $sections }}
+        {{ if gt (len (trim . " \n")) 50 }}
+          <!-- Find h3 tag -->
+          {{ $h3Start := index (split . "<h3") 0 }}
+          {{ $afterH3 := index (split . "<h3") 1 }}
+          
+          {{ if $afterH3 }}
+            <!-- Extract text between <h3> and </h3> -->
+            {{ $h3Content := index (split $afterH3 "</h3>") 0 }}
+            {{ $h3Text := index (split $h3Content ">") 1 }}
+            {{ $h3Text = trim $h3Text " \n" }}
+            
+            {{ $bodyContent := index (split $afterH3 "</h3>") 1 }}
+            {{ $bodyContent = trim $bodyContent " \n" }}
+            
+            {{ if gt (len $h3Text) 0 }}
+              <div class="accordion-item" data-expanded="false">
+                <button class="accordion-trigger" aria-expanded="false" type="button">
+                  <span class="accordion-title">{{ $h3Text }}</span>
+                  <svg class="accordion-chevron" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div class="accordion-content" role="region" aria-labelledby="">
+                  <div class="accordion-body">
+                    {{ $bodyContent | safeHTML }}
+                  </div>
+                </div>
+              </div>
+              {{ $index = add $index 1 }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <!-- Fallback for other guide pages -->
+    <div class="card-grid card-grid--three">
+      {{ range .Paginator.Pages }}
+        <article class="card">
+          <a href="{{ .RelPermalink }}">
+            <p class="card__meta">Guide</p>
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Summary }}</p>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
+</article>
 {{ end }}
