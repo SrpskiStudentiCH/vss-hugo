@@ -1,6 +1,6 @@
 # Srpski - Translation Strings
 site_title: "Srpski studenti u Švajcarskoj"
-site_description: "Premium zajednica srpskih studenata u Švajcarskoj"
+site_description: "Zajednica srpskih studenata u Švajcarskoj"
 
 # Navigation
 nav_about: "O nama"
@@ -24,6 +24,14 @@ nav_menu: "Meni"
 nav_menu_open: "Otvori meni"
 nav_menu_close: "Zatvori meni"
 theme_toggle: "Promeni temu"
+
+# Board / Team
+board_hero_title: "Upoznajte naš odbor"
+board_members_eyebrow: "Naš tim"
+board_members_title: "Članovi odbora"
+board_member_university: "Univerzitet"
+board_member_study: "Smer studija"
+board_member_email: "Kontakt email"
 
 # Hero
 hero_title: "Zajednica srpskih studenata u Švajcarskoj"
@@ -107,8 +115,8 @@ footer_follow: "Pratite nas"
 
 # Home Page
 home_eyebrow: "Srpski studenti u Švajcarskoj"
-home_title: "Zajednica koja povezuje studente, alumnije i partnere kroz znanje, događaje i prilike."
-home_description: "Premium studentska organizacija sa jasnim identitetom, modernim sadržajem i ozbiljnim pristupom umrežavanju u Švajcarskoj."
+home_title: "Tu smo za tebe, na svakom koraku tvog puta u Švajcarskoj!"
+home_description: "Studentska organizacija sa jasnim identitetom, modernim sadržajem i ozbiljnim pristupom umrežavanju u Švajcarskoj."
 home_cta_join: "Pridruži se"
 home_stats_members: "članova"
 home_stats_cities: "gradova"

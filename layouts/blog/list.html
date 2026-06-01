@@ -13,11 +13,23 @@
   <div class="blog-layout">
     <div class="card-grid blog-list" data-search-results>
       {{ range .Paginator.Pages }}
-        <article class="card post-card" data-post-card data-title="{{ .Title | lower }}" data-tags="{{ delimit .Params.tags "," }}">
-          <a href="{{ .RelPermalink }}">
-            <p class="card__meta">{{ .Date.Format "2 Jan 2006" }}</p>
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Summary }}</p>
+        {{ $post := . }}
+        <article class="card card--blog card--listing post-card" data-post-card data-title="{{ $post.Title | lower }}" data-tags="{{ delimit $post.Params.tags "," }}">
+          <a href="{{ $post.RelPermalink }}">
+            <figure class="card__image">
+              {{ with $post.Params.image }}
+                <img src="{{ . | relURL }}" alt="{{ $post.Title }}" loading="lazy" width="400" height="250">
+              {{ else }}
+                {{ with $post.Resources.GetMatch "feature*" }}
+                  <img src="{{ .RelPermalink }}" alt="{{ $post.Title }}" loading="lazy" width="400" height="250">
+                {{ else }}
+                  <img src="/images/brand/logo-vss-uss.png" alt="VSS-USS logo" loading="lazy" width="400" height="250">
+                {{ end }}
+              {{ end }}
+            </figure>
+            <p class="card__meta">{{ $post.Date.Format "2 Jan 2006" }}</p>
+            <h2>{{ $post.Title }}</h2>
+            <p>{{ $post.Summary }}</p>
           </a>
         </article>
       {{ end }}

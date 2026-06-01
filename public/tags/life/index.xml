@@ -1,19 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Life on Srpski studenti u Švajcarskoj</title>
-    <link>http://localhost:1313/tags/life/</link>
-    <description>Recent content in Life on Srpski studenti u Švajcarskoj</description>
-    <generator>Hugo</generator>
-    <language>sr</language>
-    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/life/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Studiranje i život u Švajcarskoj</title>
-      <link>http://localhost:1313/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</guid>
-      <description>&lt;h2 id=&#34;šta-treba-da-znaš-odmah&#34;&gt;Šta treba da znaš odmah&lt;/h2&gt;&#xA;&lt;p&gt;Ova stranica je praktični sloj za studente koji prvi put dolaze u Švajcarsku i žele da znaju kako funkcionišu gradski ritam, budžet i studentska rutina.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Life on Srpski studenti u Švajcarskoj</title><link>https://srpskistudenti.ch/tags/life/</link><description>Recent content in Life on Srpski studenti u Švajcarskoj</description><generator>Hugo</generator><language>sr</language><lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://srpskistudenti.ch/tags/life/index.xml" rel="self" type="application/rss+xml"/><item><title>Studiranje i život u Švajcarskoj</title><link>https://srpskistudenti.ch/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</guid><description>&lt;h2 id="šta-treba-da-znaš-odmah">Šta treba da znaš odmah&lt;/h2>
+&lt;p>Ova stranica je praktični sloj za studente koji prvi put dolaze u Švajcarsku i žele da znaju kako funkcionišu gradski ritam, budžet i studentska rutina.&lt;/p></description></item></channel></rss>

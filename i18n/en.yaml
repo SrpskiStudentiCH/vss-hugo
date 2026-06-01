@@ -1,6 +1,6 @@
 # English - Translation Strings
 site_title: "Serbian Students in Switzerland"
-site_description: "Premium community for Serbian students in Switzerland"
+site_description: "Community for Serbian students in Switzerland"
 
 # Navigation
 nav_about: "About"
@@ -24,6 +24,14 @@ nav_menu: "Menu"
 nav_menu_open: "Open menu"
 nav_menu_close: "Close menu"
 theme_toggle: "Toggle theme"
+
+# Board / Team
+board_hero_title: "Meet our board"
+board_members_eyebrow: "Our Team"
+board_members_title: "Board Members"
+board_member_university: "University"
+board_member_study: "Study Program"
+board_member_email: "Contact Email"
 
 # Hero
 hero_title: "Community of Serbian Students in Switzerland"
@@ -108,7 +116,7 @@ footer_follow: "Follow Us"
 # Home Page
 home_eyebrow: "Serbian Students in Switzerland"
 home_title: "Community connecting students, alumni and partners through knowledge, events and opportunities."
-home_description: "Premium student organization with clear identity, modern content and serious approach to networking in Switzerland."
+home_description: "Student organization with clear identity, modern content and serious approach to networking in Switzerland."
 home_cta_join: "Join Now"
 home_stats_members: "members"
 home_stats_cities: "cities"

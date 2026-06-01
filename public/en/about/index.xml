@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>About Us on Srpski studenti u Švajcarskoj</title>
-    <link>http://localhost:1313/en/about/</link>
-    <description>Recent content in About Us on Srpski studenti u Švajcarskoj</description>
-    <generator>Hugo</generator>
-    <language>sr</language>
-    <atom:link href="http://localhost:1313/en/about/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Us on Srpski studenti u Švajcarskoj</title><link>https://srpskistudenti.ch/en/about/</link><description>Recent content in About Us on Srpski studenti u Švajcarskoj</description><generator>Hugo</generator><language>sr</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://srpskistudenti.ch/en/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Our Team</title><link>https://srpskistudenti.ch/en/about/board/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/en/about/board/</guid><description>&lt;p>Our board is made up of students and young professionals who keep the organization moving, plan programs and stay close to members throughout the semester.&lt;/p></description></item></channel></rss>

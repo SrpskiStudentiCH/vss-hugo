@@ -1,145 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Srpski studenti u Švajcarskoj</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Srpski studenti u Švajcarskoj</description>
-    <generator>Hugo</generator>
-    <language>sr</language>
-    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Benefiti članstva</title>
-      <link>http://localhost:1313/join/benefits/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/join/benefits/</guid>
-      <description>&lt;p&gt;Članstvo donosi pristup događajima, prilikama za networking, korisnim informacijama i ljudima koji ubrzavaju adaptaciju u novoj sredini.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dobro došli u novu mrežu studenata</title>
-      <link>http://localhost:1313/blog/2026/04/dobro-do%C5%A1li-u-novu-mre%C5%BEu-studenata/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2026/04/dobro-do%C5%A1li-u-novu-mre%C5%BEu-studenata/</guid>
-      <description>&lt;p&gt;Srpski studenti u Švajcarskoj ulaze u novu fazu: jasniji identitet, bolja organizacija sadržaja i iskustvo koje je jednako korisno studentima, alumnijima i partnerima.&lt;/p&gt;&#xA;&lt;p&gt;Ovaj blog je zamišljen kao mesto za najave događaja, priče iz zajednice i praktične vodiče za studiranje, život i razvoj karijere.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>FAQ</title>
-      <link>http://localhost:1313/guide/faq/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guide/faq/</guid>
-      <description>&lt;h2 id=&#34;kako-da-se-pridružim&#34;&gt;Kako da se pridružim?&lt;/h2&gt;&#xA;&lt;p&gt;Popuni formular na stranici Postani član i prati naredne događaje organizacije.&lt;/p&gt;&#xA;&lt;h2 id=&#34;da-li-mogu-da-volontiram&#34;&gt;Da li mogu da volontiram?&lt;/h2&gt;&#xA;&lt;p&gt;Da. Volonteri su važan deo organizacije i često pomažu oko događaja, sadržaja i komunikacije.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Gradska predstavništva</title>
-      <link>http://localhost:1313/contact/chapters/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/chapters/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Zürich&lt;/li&gt;&#xA;&lt;li&gt;Bern&lt;/li&gt;&#xA;&lt;li&gt;Lausanne&lt;/li&gt;&#xA;&lt;li&gt;Geneva&lt;/li&gt;&#xA;&lt;li&gt;Basel&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Istorija</title>
-      <link>http://localhost:1313/about/history/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/history/</guid>
-      <description>&lt;h2 id=&#34;početak&#34;&gt;Početak&lt;/h2&gt;&#xA;&lt;p&gt;Zajednica je nastala iz potrebe da se studenti iz Srbije u Švajcarskoj međusobno povežu, razmenjuju iskustva i brže pronalaze odgovore na praktična pitanja.&lt;/p&gt;&#xA;&lt;h2 id=&#34;razvoj&#34;&gt;Razvoj&lt;/h2&gt;&#xA;&lt;p&gt;Vremenom su se spontana okupljanja pretvorila u organizovaniju mrežu: događaji, partnerstva, podrška novim studentima i sadržaj koji ostaje dostupan svima.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Odbor</title>
-      <link>http://localhost:1313/about/board/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/board/</guid>
-      <description>&lt;p&gt;Odbor vodi strateški pravac organizacije, postavlja prioritete i usklađuje programe sa potrebama članova i partnera.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Smeštaj</title>
-      <link>http://localhost:1313/guide/sme%C5%A1taj/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guide/sme%C5%A1taj/</guid>
-      <description>&lt;p&gt;Fokus je na realnim koracima: gde tražiti, kako konkurisati i na šta obratiti pažnju kod ugovora i troškova.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Stipendije</title>
-      <link>http://localhost:1313/guide/stipendije/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guide/stipendije/</guid>
-      <description>&lt;p&gt;Ovde ide pregled stipendija, fondova i konkurisanja, uz fokus na praktične rokove i korisne izvore.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Studiranje i život u Švajcarskoj</title>
-      <link>http://localhost:1313/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</guid>
-      <description>&lt;h2 id=&#34;šta-treba-da-znaš-odmah&#34;&gt;Šta treba da znaš odmah&lt;/h2&gt;&#xA;&lt;p&gt;Ova stranica je praktični sloj za studente koji prvi put dolaze u Švajcarsku i žele da znaju kako funkcionišu gradski ritam, budžet i studentska rutina.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Studiranje u Švajcarskoj</title>
-      <link>http://localhost:1313/guide/studiranje-u-%C5%A1vajcarskoj/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guide/studiranje-u-%C5%A1vajcarskoj/</guid>
-      <description>&lt;h2 id=&#34;aufenthaltsbewilligung&#34;&gt;Aufenthaltsbewilligung&lt;/h2&gt;&#xA;&lt;p&gt;Za studiranje u Švajcarskoj potrebna ti je boravišna dozvola, a u nekim slučajevima i viza. Korisne informacije:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.eda.admin.ch/countries/serbia/de/home/visa/aufenthalt/studieren.html&#34;&gt;https://www.eda.admin.ch/countries/serbia/de/home/visa/aufenthalt/studieren.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.eda.admin.ch/eda/de/home/einreise-aufenthalt-schweiz/visabestimmungen-visumantragsformular.html&#34;&gt;https://www.eda.admin.ch/eda/de/home/einreise-aufenthalt-schweiz/visabestimmungen-visumantragsformular.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;finansiranje&#34;&gt;Finansiranje&lt;/h2&gt;&#xA;&lt;p&gt;Stipendijski sistem je kantonalno uređen i razlikuje se od kantona do kantona. Preporuka je da se prvo informišeš na samom univerzitetu.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tim</title>
-      <link>http://localhost:1313/about/team/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/team/</guid>
-      <description>&lt;h2 id=&#34;komeverujemo&#34;&gt;Komeverujemo&lt;/h2&gt;&#xA;&lt;p&gt;Tim čine studenti i mladi profesionalci koji dobro poznaju oba sveta: akademski život u Švajcarskoj i potrebe zajednice iz Srbije.&lt;/p&gt;&#xA;&lt;h2 id=&#34;uloge&#34;&gt;Uloge&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;koordinacija događaja&lt;/li&gt;&#xA;&lt;li&gt;komunikacija i sadržaj&lt;/li&gt;&#xA;&lt;li&gt;partnerstva i sponzorstva&lt;/li&gt;&#xA;&lt;li&gt;podrška novim članovima&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Univerziteti i visoke škole</title>
-      <link>http://localhost:1313/guide/univerziteti-i-visoke-%C5%A1kole/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guide/univerziteti-i-visoke-%C5%A1kole/</guid>
-      <description>&lt;h2 id=&#34;univerziteti&#34;&gt;Univerziteti&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ETH Zürich: &lt;a href=&#34;https://ethz.ch/de.html&#34;&gt;https://ethz.ch/de.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;EPFL Lausanne: &lt;a href=&#34;https://www.epfl.ch/fr/&#34;&gt;https://www.epfl.ch/fr/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Basel: &lt;a href=&#34;https://www.unibas.ch/de&#34;&gt;https://www.unibas.ch/de&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Bern: &lt;a href=&#34;https://www.unibe.ch/&#34;&gt;https://www.unibe.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Freiburg: &lt;a href=&#34;https://www3.unifr.ch/home/de/&#34;&gt;https://www3.unifr.ch/home/de/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Université de Genève: &lt;a href=&#34;https://www.unige.ch/&#34;&gt;https://www.unige.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Université de Lausanne: &lt;a href=&#34;http://www.unil.ch/index.html&#34;&gt;http://www.unil.ch/index.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Luzern: &lt;a href=&#34;https://www.unilu.ch/&#34;&gt;https://www.unilu.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität St. Gallen (HSG): &lt;a href=&#34;https://www.unisg.ch/&#34;&gt;https://www.unisg.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Universität Zürich: &lt;a href=&#34;https://www.uzh.ch/de.html&#34;&gt;https://www.uzh.ch/de.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;fachhochschulen&#34;&gt;Fachhochschulen&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ZHAW: &lt;a href=&#34;https://www.zhaw.ch/de/hochschule/&#34;&gt;https://www.zhaw.ch/de/hochschule/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;ZHdK: &lt;a href=&#34;https://www.zhdk.ch/&#34;&gt;https://www.zhdk.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;HSLU: &lt;a href=&#34;https://www.hslu.ch/de-ch/&#34;&gt;https://www.hslu.ch/de-ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;FHNW: &lt;a href=&#34;https://www.fhnw.ch/de/startseite&#34;&gt;https://www.fhnw.ch/de/startseite&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;BFH: &lt;a href=&#34;https://www.bfh.ch/de/&#34;&gt;https://www.bfh.ch/de/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;SUPSI: &lt;a href=&#34;http://www.supsi.ch/home.html&#34;&gt;http://www.supsi.ch/home.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;FHO: &lt;a href=&#34;https://www.fho.ch/&#34;&gt;https://www.fho.ch/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;HES-SO: &lt;a href=&#34;https://www.hes-so.ch/de/homepage-hes-so-1679.html&#34;&gt;https://www.hes-so.ch/de/homepage-hes-so-1679.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Volontiranje</title>
-      <link>http://localhost:1313/join/volunteer/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/join/volunteer/</guid>
-      <description>&lt;p&gt;Volontiranje je najbolji način da naučiš više, upoznaš ljude i ostaviš konkretan trag u zajednici.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Kako alumniji jačaju studentsku mrežu</title>
-      <link>http://localhost:1313/blog/2026/04/kako-alumniji-ja%C4%8Daju-studentsku-mre%C5%BEu/</link>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2026/04/kako-alumniji-ja%C4%8Daju-studentsku-mre%C5%BEu/</guid>
-      <description>&lt;p&gt;Alumniji donose iskustvo, kontakte i praktične savete koji novu generaciju mogu da poštede mnogih grešaka i ubrzaju razvoj.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Generalna skupština 2021</title>
-      <link>http://localhost:1313/blog/2021/12/generalna-skup%C5%A1tina-2021/</link>
-      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2021/12/generalna-skup%C5%A1tina-2021/</guid>
-      <description>&lt;p&gt;U toku 2020. organizacija je bila pod pritiskom pandemije i pada aktivnosti, ali je kroz zajednički rad uspela da se reorganizuje i pripremi za novu fazu razvoja.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Generalna skupština 2021</title>
-      <link>http://localhost:1313/events/2021/12/15/generalna-skup%C5%A1tina-2021/</link>
-      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/events/2021/12/15/generalna-skup%C5%A1tina-2021/</guid>
-      <description>&lt;p&gt;Generalna skupština 2021 bila je mesto gde su članovi prošli kroz rezultate, izazove i sledeće korake organizacije.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vidovdanski izlet 2021</title>
-      <link>http://localhost:1313/events/2021/07/04/vidovdanski-izlet-2021/</link>
-      <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/events/2021/07/04/vidovdanski-izlet-2021/</guid>
-      <description>&lt;p&gt;Završetak semestra i St. Vitus dan (Vidovdan), važan datum za srpsku zajednicu, obeležili smo uz članove organizacije na Greifenseeu. Dobar roštilj, toplo vreme i muzika su napravili odličnu atmosferu, a druženje je trajalo do kasno uveče.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Foxtrail Bern 2021</title>
-      <link>http://localhost:1313/events/2021/05/29/foxtrail-bern-2021/</link>
-      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/events/2021/05/29/foxtrail-bern-2021/</guid>
-      <description>&lt;p&gt;Foxtrail u Bernu je bio jedan od događaja koji su spojili zabavu, timski duh i gradsko istraživanje.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Wanderung - April 2021</title>
-      <link>http://localhost:1313/events/2021/04/03/wanderung-april-2021/</link>
-      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/events/2021/04/03/wanderung-april-2021/</guid>
-      <description>&lt;p&gt;Prolećna šetnja i zajedničko druženje članova u prirodi, sa naglaskom na neformalni susret i zajednicu.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Srpski studenti u Švajcarskoj</title><link>https://srpskistudenti.ch/</link><description>Recent content on Srpski studenti u Švajcarskoj</description><generator>Hugo</generator><language>sr</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://srpskistudenti.ch/index.xml" rel="self" type="application/rss+xml"/><item><title>Naš tim</title><link>https://srpskistudenti.ch/about/board/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/about/board/</guid><description>&lt;p>Naš odbor okuplja studente i mlade profesionalce koji zajedno vode organizaciju, planiraju programe i ostaju blizu članovima kroz ceo semestar.&lt;/p></description></item><item><title>Our Team</title><link>https://srpskistudenti.ch/en/about/board/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/en/about/board/</guid><description>&lt;p>Our board is made up of students and young professionals who keep the organization moving, plan programs and stay close to members throughout the semester.&lt;/p></description></item><item><title>Unser Team</title><link>https://srpskistudenti.ch/de/about/board/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/de/about/board/</guid><description>&lt;p>Unser Vorstand besteht aus Studierenden und jungen Fachleuten, die die Organisation voranbringen, Programme planen und während des Semesters nah an den Mitgliedern bleiben.&lt;/p></description></item><item><title>Spring Network Night</title><link>https://srpskistudenti.ch/events/2026/05/20/spring-network-night/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/events/2026/05/20/spring-network-night/</guid><description>&lt;p>Veče za upoznavanje novih članova, partnera i alumnija uz kratke razgovore i neformalno druženje.&lt;/p></description></item><item><title>Benefiti članstva</title><link>https://srpskistudenti.ch/join/benefits/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/join/benefits/</guid><description>&lt;p>Članstvo donosi pristup događajima, prilikama za networking, korisnim informacijama i ljudima koji ubrzavaju adaptaciju u novoj sredini.&lt;/p></description></item><item><title>Dobro došli u novu mrežu studenata</title><link>https://srpskistudenti.ch/blog/2026/04/dobro-do%C5%A1li-u-novu-mre%C5%BEu-studenata/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/blog/2026/04/dobro-do%C5%A1li-u-novu-mre%C5%BEu-studenata/</guid><description>&lt;p>Srpski studenti u Švajcarskoj ulaze u novu fazu: jasniji identitet, bolja organizacija sadržaja i iskustvo koje je jednako korisno studentima, alumnijima i partnerima.&lt;/p>
+&lt;p>Ovaj blog je zamišljen kao mesto za najave događaja, priče iz zajednice i praktične vodiče za studiranje, život i razvoj karijere.&lt;/p></description></item><item><title>FAQ</title><link>https://srpskistudenti.ch/guide/faq/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/guide/faq/</guid><description>&lt;h2 id="kako-da-se-pridružim">Kako da se pridružim?&lt;/h2>
+&lt;p>Popuni formular na stranici Postani član i prati naredne događaje organizacije.&lt;/p>
+&lt;h2 id="da-li-mogu-da-volontiram">Da li mogu da volontiram?&lt;/h2>
+&lt;p>Da. Volonteri su važan deo organizacije i često pomažu oko događaja, sadržaja i komunikacije.&lt;/p></description></item><item><title>Gradska predstavništva</title><link>https://srpskistudenti.ch/contact/chapters/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/contact/chapters/</guid><description>&lt;p>cities = [
+{ name = &amp;ldquo;Zürich&amp;rdquo;, image = &amp;ldquo;Zurich.jpg&amp;rdquo; },
+{ name = &amp;ldquo;Bern&amp;rdquo;, image = &amp;ldquo;Bern.jpg&amp;rdquo; },
+{ name = &amp;ldquo;Lausanne&amp;rdquo;, image = &amp;ldquo;Lausanne.jpg&amp;rdquo; },
+{ name = &amp;ldquo;Geneva&amp;rdquo;, image = &amp;ldquo;Geneva.jpg&amp;rdquo; },
+{ name = &amp;ldquo;Basel&amp;rdquo;, image = &amp;ldquo;Basel.jpg&amp;rdquo; }
+]&lt;/p></description></item><item><title>Istorija</title><link>https://srpskistudenti.ch/about/history/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/about/history/</guid><description>&lt;h2 id="početak">Početak&lt;/h2>
+&lt;p>Zajednica je nastala iz potrebe da se studenti iz Srbije u Švajcarskoj međusobno povežu, razmenjuju iskustva i brže pronalaze odgovore na praktična pitanja.&lt;/p>
+&lt;h2 id="razvoj">Razvoj&lt;/h2>
+&lt;p>Vremenom su se spontana okupljanja pretvorila u organizovaniju mrežu: događaji, partnerstva, podrška novim studentima i sadržaj koji ostaje dostupan svima.&lt;/p></description></item><item><title>Smeštaj</title><link>https://srpskistudenti.ch/guide/sme%C5%A1taj/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/guide/sme%C5%A1taj/</guid><description>&lt;p>Fokus je na realnim koracima: gde tražiti, kako konkurisati i na šta obratiti pažnju kod ugovora i troškova.&lt;/p></description></item><item><title>Stipendije</title><link>https://srpskistudenti.ch/guide/stipendije/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/guide/stipendije/</guid><description>&lt;p>Ovde ide pregled stipendija, fondova i konkurisanja, uz fokus na praktične rokove i korisne izvore.&lt;/p></description></item><item><title>Studiranje i život u Švajcarskoj</title><link>https://srpskistudenti.ch/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/guide/studiranje-i-%C5%BEivot-u-%C5%A1vajcarskoj/</guid><description>&lt;h2 id="šta-treba-da-znaš-odmah">Šta treba da znaš odmah&lt;/h2>
+&lt;p>Ova stranica je praktični sloj za studente koji prvi put dolaze u Švajcarsku i žele da znaju kako funkcionišu gradski ritam, budžet i studentska rutina.&lt;/p></description></item><item><title>Studiranje u Švajcarskoj</title><link>https://srpskistudenti.ch/guide/studiranje-u-%C5%A1vajcarskoj/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/guide/studiranje-u-%C5%A1vajcarskoj/</guid><description>&lt;h2 id="aufenthaltsbewilligung">Aufenthaltsbewilligung&lt;/h2>
+&lt;p>Za studiranje u Švajcarskoj potrebna ti je boravišna dozvola, a u nekim slučajevima i viza. Korisne informacije:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.eda.admin.ch/countries/serbia/de/home/visa/aufenthalt/studieren.html">https://www.eda.admin.ch/countries/serbia/de/home/visa/aufenthalt/studieren.html&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.eda.admin.ch/eda/de/home/einreise-aufenthalt-schweiz/visabestimmungen-visumantragsformular.html">https://www.eda.admin.ch/eda/de/home/einreise-aufenthalt-schweiz/visabestimmungen-visumantragsformular.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="finansiranje">Finansiranje&lt;/h2>
+&lt;p>Stipendijski sistem je kantonalno uređen i razlikuje se od kantona do kantona. Preporuka je da se prvo informišeš na samom univerzitetu.&lt;/p></description></item><item><title>Univerziteti i visoke škole</title><link>https://srpskistudenti.ch/guide/univerziteti-i-visoke-%C5%A1kole/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/guide/univerziteti-i-visoke-%C5%A1kole/</guid><description>&lt;h2 id="univerziteti">Univerziteti&lt;/h2>
+&lt;ul>
+&lt;li>ETH Zürich: &lt;a href="https://ethz.ch/de.html">https://ethz.ch/de.html&lt;/a>&lt;/li>
+&lt;li>EPFL Lausanne: &lt;a href="https://www.epfl.ch/fr/">https://www.epfl.ch/fr/&lt;/a>&lt;/li>
+&lt;li>Universität Basel: &lt;a href="https://www.unibas.ch/de">https://www.unibas.ch/de&lt;/a>&lt;/li>
+&lt;li>Universität Bern: &lt;a href="https://www.unibe.ch/">https://www.unibe.ch/&lt;/a>&lt;/li>
+&lt;li>Universität Freiburg: &lt;a href="https://www3.unifr.ch/home/de/">https://www3.unifr.ch/home/de/&lt;/a>&lt;/li>
+&lt;li>Université de Genève: &lt;a href="https://www.unige.ch/">https://www.unige.ch/&lt;/a>&lt;/li>
+&lt;li>Université de Lausanne: &lt;a href="http://www.unil.ch/index.html">http://www.unil.ch/index.html&lt;/a>&lt;/li>
+&lt;li>Universität Luzern: &lt;a href="https://www.unilu.ch/">https://www.unilu.ch/&lt;/a>&lt;/li>
+&lt;li>Universität St. Gallen (HSG): &lt;a href="https://www.unisg.ch/">https://www.unisg.ch/&lt;/a>&lt;/li>
+&lt;li>Universität Zürich: &lt;a href="https://www.uzh.ch/de.html">https://www.uzh.ch/de.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="fachhochschulen">Fachhochschulen&lt;/h2>
+&lt;ul>
+&lt;li>ZHAW: &lt;a href="https://www.zhaw.ch/de/hochschule/">https://www.zhaw.ch/de/hochschule/&lt;/a>&lt;/li>
+&lt;li>ZHdK: &lt;a href="https://www.zhdk.ch/">https://www.zhdk.ch/&lt;/a>&lt;/li>
+&lt;li>HSLU: &lt;a href="https://www.hslu.ch/de-ch/">https://www.hslu.ch/de-ch/&lt;/a>&lt;/li>
+&lt;li>FHNW: &lt;a href="https://www.fhnw.ch/de/startseite">https://www.fhnw.ch/de/startseite&lt;/a>&lt;/li>
+&lt;li>BFH: &lt;a href="https://www.bfh.ch/de/">https://www.bfh.ch/de/&lt;/a>&lt;/li>
+&lt;li>SUPSI: &lt;a href="http://www.supsi.ch/home.html">http://www.supsi.ch/home.html&lt;/a>&lt;/li>
+&lt;li>FHO: &lt;a href="https://www.fho.ch/">https://www.fho.ch/&lt;/a>&lt;/li>
+&lt;li>HES-SO: &lt;a href="https://www.hes-so.ch/de/homepage-hes-so-1679.html">https://www.hes-so.ch/de/homepage-hes-so-1679.html&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Volontiranje</title><link>https://srpskistudenti.ch/join/volunteer/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/join/volunteer/</guid><description>&lt;p>Volontiranje je najbolji način da naučiš više, upoznaš ljude i ostaviš konkretan trag u zajednici.&lt;/p></description></item><item><title>Kako alumniji jačaju studentsku mrežu</title><link>https://srpskistudenti.ch/blog/2026/04/kako-alumniji-ja%C4%8Daju-studentsku-mre%C5%BEu/</link><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/blog/2026/04/kako-alumniji-ja%C4%8Daju-studentsku-mre%C5%BEu/</guid><description>&lt;p>Alumniji donose iskustvo, kontakte i praktične savete koji novu generaciju mogu da poštede mnogih grešaka i ubrzaju razvoj.&lt;/p></description></item><item><title>Generalna skupština 2021</title><link>https://srpskistudenti.ch/blog/2021/12/generalna-skup%C5%A1tina-2021/</link><pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/blog/2021/12/generalna-skup%C5%A1tina-2021/</guid><description>&lt;p>U toku 2020. organizacija je bila pod pritiskom pandemije i pada aktivnosti, ali je kroz zajednički rad uspela da se reorganizuje i pripremi za novu fazu razvoja.&lt;/p></description></item><item><title>Generalna skupština 2021</title><link>https://srpskistudenti.ch/events/2021/12/15/generalna-skup%C5%A1tina-2021/</link><pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/events/2021/12/15/generalna-skup%C5%A1tina-2021/</guid><description>&lt;p>Generalna skupština 2021 bila je mesto gde su članovi prošli kroz rezultate, izazove i sledeće korake organizacije.&lt;/p></description></item><item><title>Vidovdanski izlet 2021</title><link>https://srpskistudenti.ch/events/2021/07/04/vidovdanski-izlet-2021/</link><pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/events/2021/07/04/vidovdanski-izlet-2021/</guid><description>&lt;p>Završetak semestra i St. Vitus dan (Vidovdan), važan datum za srpsku zajednicu, obeležili smo uz članove organizacije na Greifenseeu. Dobar roštilj, toplo vreme i muzika su napravili odličnu atmosferu, a druženje je trajalo do kasno uveče.&lt;/p></description></item><item><title>Foxtrail Bern 2021</title><link>https://srpskistudenti.ch/events/2021/05/29/foxtrail-bern-2021/</link><pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/events/2021/05/29/foxtrail-bern-2021/</guid><description>&lt;p>Foxtrail u Bernu je bio jedan od događaja koji su spojili zabavu, timski duh i gradsko istraživanje.&lt;/p></description></item><item><title>Wanderung - April 2021</title><link>https://srpskistudenti.ch/events/2021/04/03/wanderung-april-2021/</link><pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/events/2021/04/03/wanderung-april-2021/</guid><description>&lt;p>Prolećna šetnja i zajedničko druženje članova u prirodi, sa naglaskom na neformalni susret i zajednicu.&lt;/p></description></item></channel></rss>

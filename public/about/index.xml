@@ -1,33 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>O nama on Srpski studenti u Švajcarskoj</title>
-    <link>http://localhost:1313/about/</link>
-    <description>Recent content in O nama on Srpski studenti u Švajcarskoj</description>
-    <generator>Hugo</generator>
-    <language>sr</language>
-    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Istorija</title>
-      <link>http://localhost:1313/about/history/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/history/</guid>
-      <description>&lt;h2 id=&#34;početak&#34;&gt;Početak&lt;/h2&gt;&#xA;&lt;p&gt;Zajednica je nastala iz potrebe da se studenti iz Srbije u Švajcarskoj međusobno povežu, razmenjuju iskustva i brže pronalaze odgovore na praktična pitanja.&lt;/p&gt;&#xA;&lt;h2 id=&#34;razvoj&#34;&gt;Razvoj&lt;/h2&gt;&#xA;&lt;p&gt;Vremenom su se spontana okupljanja pretvorila u organizovaniju mrežu: događaji, partnerstva, podrška novim studentima i sadržaj koji ostaje dostupan svima.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Odbor</title>
-      <link>http://localhost:1313/about/board/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/board/</guid>
-      <description>&lt;p&gt;Odbor vodi strateški pravac organizacije, postavlja prioritete i usklađuje programe sa potrebama članova i partnera.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tim</title>
-      <link>http://localhost:1313/about/team/</link>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/team/</guid>
-      <description>&lt;h2 id=&#34;komeverujemo&#34;&gt;Komeverujemo&lt;/h2&gt;&#xA;&lt;p&gt;Tim čine studenti i mladi profesionalci koji dobro poznaju oba sveta: akademski život u Švajcarskoj i potrebe zajednice iz Srbije.&lt;/p&gt;&#xA;&lt;h2 id=&#34;uloge&#34;&gt;Uloge&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;koordinacija događaja&lt;/li&gt;&#xA;&lt;li&gt;komunikacija i sadržaj&lt;/li&gt;&#xA;&lt;li&gt;partnerstva i sponzorstva&lt;/li&gt;&#xA;&lt;li&gt;podrška novim članovima&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>O nama on Srpski studenti u Švajcarskoj</title><link>https://srpskistudenti.ch/about/</link><description>Recent content in O nama on Srpski studenti u Švajcarskoj</description><generator>Hugo</generator><language>sr</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://srpskistudenti.ch/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Naš tim</title><link>https://srpskistudenti.ch/about/board/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/about/board/</guid><description>&lt;p>Naš odbor okuplja studente i mlade profesionalce koji zajedno vode organizaciju, planiraju programe i ostaju blizu članovima kroz ceo semestar.&lt;/p></description></item><item><title>Istorija</title><link>https://srpskistudenti.ch/about/history/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/about/history/</guid><description>&lt;h2 id="početak">Početak&lt;/h2>
+&lt;p>Zajednica je nastala iz potrebe da se studenti iz Srbije u Švajcarskoj međusobno povežu, razmenjuju iskustva i brže pronalaze odgovore na praktična pitanja.&lt;/p>
+&lt;h2 id="razvoj">Razvoj&lt;/h2>
+&lt;p>Vremenom su se spontana okupljanja pretvorila u organizovaniju mrežu: događaji, partnerstva, podrška novim studentima i sadržaj koji ostaje dostupan svima.&lt;/p></description></item></channel></rss>

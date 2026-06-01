@@ -2,7 +2,17 @@
 title = "Kontakt"
 description = "Kontaktiraj tim, pošalji predlog ili se poveži sa predstavništvom u svom gradu."
 layout = "contact"
+
+cities = [
+  { name = "Zürich", image = "Zurich.jpg" },
+  { name = "Bern", image = "Bern.jpg" },
+  { name = "Lausanne", image = "Lausanne.jpg" },
+  { name = "Geneva", image = "Geneva.jpg" },
+  { name = "Basel", image = "Basel.jpg" }
+]
+
 +++
+
 
 ## Kontakt informacije
 
@@ -12,12 +22,4 @@ layout = "contact"
 
 ## Gradska predstavništva
 
-- Zürich
-- Bern
-- Lausanne
-- Geneva
-- Basel
-
-## Napomena
-
-Ova forma je pripremljena za static form provajdera kao što su Netlify Forms, Formspree ili Basin.
+Ispod su naša gradska predstavništva. Klikni na karticu za više informacija.
