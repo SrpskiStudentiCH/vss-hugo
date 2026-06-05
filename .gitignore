@@ -1,9 +1,12 @@
 # Hugo generated files
 /public/
 /resources/_gen/
+public/*
 
-# Hugo cache
+# Hugo cache / build metadata
 .hugo_build.lock
+/resources/_gen/
+
 
 # Node dependencies (ako koristiš npm/yarn/pnpm)
 /node_modules/
@@ -11,6 +14,7 @@
 # OS files
 .DS_Store
 Thumbs.db
+
 
 # Editor files
 .vscode/*

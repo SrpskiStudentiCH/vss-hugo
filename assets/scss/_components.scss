@@ -204,13 +204,143 @@
 }
 
 .card--blog > a > h3 {
-  padding: 0 1.25rem;
+  padding: 1.5rem 1.25rem;
   margin-bottom: 0 !important;
   margin-top: 0.5rem !important;
 }
 
 .card--blog .card__meta {
   padding: 0.75rem 1.25rem 0.5rem;
+}
+
+// Board / team page
+.board-page {
+  .page-hero {
+    max-width: 760px;
+  }
+}
+
+.board-intro {
+  max-width: 72ch;
+  margin-bottom: 2rem;
+}
+
+.card-grid--board {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.board-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.board-card__media {
+  margin: 0;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--surface-strong);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+}
+
+.board-card__media--logo {
+  background: linear-gradient(145deg, color-mix(in srgb, var(--surface-strong) 82%, var(--accent) 18%), var(--surface));
+
+  img {
+    object-fit: contain;
+    padding: 1.25rem;
+  }
+}
+
+.board-card:hover .board-card__media img {
+  transform: scale(1.04);
+}
+
+.board-card__body {
+  padding: 1.1rem 1.15rem 1.2rem;
+  display: grid;
+  gap: 0.85rem;
+  flex: 1;
+}
+
+.board-card__heading h3 {
+  margin: 0;
+}
+
+.board-card__role {
+  margin: 0.35rem 0 0;
+  color: var(--accent-secondary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.board-card__details {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+
+  div {
+    display: grid;
+    gap: 0.2rem;
+  }
+
+  dt {
+    color: var(--text-secondary);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+    line-height: 1.45;
+  }
+}
+
+.board-card__email {
+  margin: 0;
+  padding-top: 0.25rem;
+  display: grid;
+  gap: 0.2rem;
+
+  .board-card__label {
+    color: var(--text-secondary);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 700;
+    word-break: break-word;
+  }
+}
+
+.board-card:hover {
+  transform: translateY(-4px);
 }
 
 // Contact Cards
@@ -278,6 +408,45 @@
 
   [data-theme="dark"] & {
     background: color-mix(in srgb, var(--accent-secondary) 28%, transparent);
+  }
+}
+
+// City cards (horizontal list of city representatives)
+.city-cards {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  overflow-x: auto;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.city-card {
+  min-width: 140px;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.city-card .card__image {
+  width: 100%;
+  height: 140px;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.city-card h3 {
+  padding: 0.85rem 1rem 1.25rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .city-cards {
+    justify-content: flex-start;
   }
 }
 
@@ -594,6 +763,7 @@ textarea {
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.018em;
+  margin-left: -0.2rem;
 }
 
 .filter-pill.is-active {

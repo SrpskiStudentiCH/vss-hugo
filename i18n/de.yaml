@@ -1,6 +1,6 @@
 # Deutsch - Translation Strings
 site_title: "Serbische Studierende in der Schweiz"
-site_description: "Premium-Gemeinschaft für serbische Studierende in der Schweiz"
+site_description: "Gemeinschaft für serbische Studierende in der Schweiz"
 
 # Navigation
 nav_about: "Über uns"
@@ -24,6 +24,14 @@ nav_menu: "Menü"
 nav_menu_open: "Menü öffnen"
 nav_menu_close: "Menü schließen"
 theme_toggle: "Thema wechseln"
+
+# Board / Team
+board_hero_title: "Lernen Sie unseren Vorstand kennen"
+board_members_eyebrow: "Unser Team"
+board_members_title: "Vorstandsmitglieder"
+board_member_university: "Universität"
+board_member_study: "Studiengang"
+board_member_email: "Kontakt-E-Mail"
 
 # Hero
 hero_title: "Gemeinschaft der serbischen Studierenden in der Schweiz"
@@ -108,7 +116,7 @@ footer_follow: "Folge uns"
 # Home Page
 home_eyebrow: "Serbische Studierende in der Schweiz"
 home_title: "Gemeinschaft, die Studierende, Alumni und Partner durch Wissen, Events und Möglichkeiten verbindet."
-home_description: "Premium-Studentenorganisation mit klarer Identität, modernem Inhalt und seriösem Netzwerkansatz in der Schweiz."
+home_description: "Studentenorganisation mit klarer Identität, modernem Inhalt und seriösem Netzwerkansatz in der Schweiz."
 home_cta_join: "Jetzt beitreten"
 home_stats_members: "Mitglieder"
 home_stats_cities: "Städte"

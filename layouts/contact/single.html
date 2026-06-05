@@ -9,6 +9,20 @@
   <div class="card-grid card-grid--two">
     <div class="card prose">
       {{ .Content }}
+      {{ with .Params.cities }}
+      <div class="city-cards">
+        {{ range . }}
+          <article class="card city-card">
+            <a href="#">
+              <div class="card__image">
+                <img src="/images/cities/{{ .image }}" alt="{{ .name }}" loading="lazy" width="300" height="200">
+              </div>
+              <h3>{{ .name }}</h3>
+            </a>
+          </article>
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
     <form class="card contact-form">
       <label>Ime<input type="text" name="name"></label>

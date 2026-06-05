@@ -1,0 +1,60 @@
+{{ define "main" }}
+<article class="container content-page board-page">
+  <header class="page-hero board-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">{{ i18n "board_members_eyebrow" }}</p>
+    <h1>{{ i18n "board_hero_title" }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ with .Content }}
+    <section class="board-intro prose">
+      {{ . }}
+    </section>
+  {{ end }}
+
+  <section class="board-section" aria-labelledby="board-members-title">
+    <div class="section-heading">
+      <p class="eyebrow">{{ i18n "board_members_eyebrow" }}</p>
+      <h2 id="board-members-title">{{ i18n "board_members_title" }}</h2>
+    </div>
+
+    <div class="card-grid card-grid--board">
+      {{ range .Params.members }}
+        <article class="card board-card">
+          <figure class="board-card__media{{ if not .image }} board-card__media--logo{{ end }}">
+            {{ if .image }}
+              <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy" width="300" height="400">
+            {{ else }}
+              <img src="/images/brand/logo-vss-uss.png" alt="Srpski studenti u Švajcarskoj" loading="lazy" width="300" height="400">
+            {{ end }}
+          </figure>
+
+          <div class="board-card__body">
+            <header class="board-card__heading">
+              <h3>{{ .name }}</h3>
+              <p class="board-card__role">{{ .role }}</p>
+            </header>
+
+            <dl class="board-card__details">
+              <div>
+                <dt>{{ i18n "board_member_university" }}</dt>
+                <dd>{{ .university }}</dd>
+              </div>
+              <div>
+                <dt>{{ i18n "board_member_study" }}</dt>
+                <dd>{{ .study }}</dd>
+              </div>
+            </dl>
+
+            <div class="board-card__email">
+              <span class="board-card__label">{{ i18n "board_member_email" }}</span>
+              <a href="mailto:{{ .email }}">{{ .email }}</a>
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+</article>
+{{ end }}

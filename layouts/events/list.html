@@ -15,12 +15,20 @@
 
   <div class="card-grid event-list" data-event-list>
     {{ range .Paginator.Pages }}
-      <article class="card event-card" data-event-card data-city="{{ .Params.city }}" data-type="{{ .Params.event_type }}">
-        <a href="{{ .RelPermalink }}">
-          <p class="card__meta">{{ .Date.Format "2 Jan 2006" }}</p>
-          <h2>{{ .Title }}</h2>
-          <p>{{ .Summary }}</p>
-          <p class="event-badge">{{ .Params.city }} · {{ .Params.event_type }}</p>
+      {{ $e := . }}
+      <article class="card event-card" data-event-card data-city="{{ $e.Params.city }}" data-type="{{ $e.Params.event_type }}">
+        <a href="{{ $e.RelPermalink }}">
+          <figure class="card__image">
+            {{ with $e.Params.image }}
+              <img src="{{ . | relURL }}" alt="{{ $e.Title }}" loading="lazy" width="400" height="200">
+            {{ else }}
+              <img src="/images/brand/logo-vss-uss.png" alt="VSS-USS logo" loading="lazy" width="400" height="200">
+            {{ end }}
+          </figure>
+          <p class="card__meta">{{ $e.Date.Format "2 Jan 2006" }}</p>
+          <h2>{{ $e.Title }}</h2>
+          <p>{{ $e.Summary }}</p>
+          <p class="event-badge">{{ $e.Params.city }} · {{ $e.Params.event_type }}</p>
         </a>
       </article>
     {{ end }}
