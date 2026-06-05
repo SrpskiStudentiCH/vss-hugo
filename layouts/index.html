@@ -10,10 +10,17 @@
         <a class="button button--secondary" href="{{ "events" | relLangURL }}">{{ i18n "nav_events" }}</a>
       </div>
     </div>
+
     <div class="hero__panel glass-card">
       <figure class="hero-image hero-image--large">
-        <img src="{{ "images/original/history-photo.jpg" | relURL }}" alt="{{ i18n "home_eyebrow" }}" loading="eager" width="400" height="400">
+        <img
+          src="{{ "images/original/history-photo.jpg" | strings.TrimPrefix "/" | relURL }}"
+          alt="{{ i18n "home_eyebrow" }}"
+          loading="eager"
+          width="400"
+          height="400">
       </figure>
+
       <div class="stats">
         <div><strong>120+</strong><span>{{ i18n "home_stats_members" }}</span></div>
         <div><strong>5</strong><span>{{ i18n "home_stats_cities" }}</span></div>
@@ -34,14 +41,16 @@
     <p class="eyebrow">{{ i18n "home_why_eyebrow" }}</p>
     <h2>{{ i18n "home_why_title" }}</h2>
   </div>
+
   <div class="card-grid card-grid--three">
     <article class="card card--icon">
       <div class="card__icon">
-        <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><path d="M80.8806,58.106A17.969,17.969,0,1,0,50.7979,38.4587a30.0584,30.0584,0,0,0-5.9173-4.3527,18,18,0,1,0-29.7612,0A29.8957,29.8957,0,0,0,0,60a5.9966,5.9966,0,0,0,6,6H42.1494A29.7165,29.7165,0,0,0,36,84a5.9966,5.9966,0,0,0,6,6H90a5.9966,5.9966,0,0,0,6-6A29.8957,29.8957,0,0,0,80.8806,58.106ZM66,42a6,6,0,1,1-6,6A6.0116,6.0116,0,0,1,66,42ZM24,24a6,6,0,1,1,6,6A6.0116,6.0116,0,0,1,24,24Zm6,18A18.0182,18.0182,0,0,1,46.9688,54H13.0313A18.018,18.018,0,0,1,30,42ZM49.0313,78a17.9974,17.9974,0,0,1,33.9375,0Z" fill="currentColor"/></svg>
+        <svg viewBox="0 0 96 96"><path d="M80.8806,58.106A17.969,17.969,0,1,0,50.7979,38.4587a30.0584,30.0584,0,0,0-5.9173-4.3527,18,18,0,1,0-29.7612,0A29.8957,29.8957,0,0,0,0,60a5.9966,5.9966,0,0,0,6,6H42.1494A29.7165,29.7165,0,0,0,36,84a5.9966,5.9966,0,0,0,6,6H90a5.9966,5.9966,0,0,0,6-6A29.8957,29.8957,0,0,0,80.8806,58.106Z" fill="currentColor"/></svg>
       </div>
       <h3>{{ i18n "home_why_networking_title" }}</h3>
       <p>{{ i18n "home_why_networking_desc" }}</p>
     </article>
+
     <article class="card card--icon">
       <div class="card__icon">
         <svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg"><path d="M567.663,0v190.423h64.679V0h-64.685H567.663z M303.553,57.225 l-52.992,37.103l109.203,155.946l52.963-37.104L303.553,57.225z M896.439,57.225L787.268,213.171l52.971,37.104L949.44,94.328 l-52.992-37.103H896.439z M599.989,242.524c-158.227,0-286.493,96.083-286.493,214.625l162.772,492.948h247.47l162.758-492.948 c0-118.54-128.258-214.625-286.492-214.625H599.989z M85.465,299.673l-22.099,60.814l178.849,65.114l22.181-60.785L85.461,299.673 H85.465z M1114.527,299.673l-178.936,65.148l22.106,60.792l178.936-65.125L1114.527,299.673z M255.756,577.681L71.856,627.007 l16.686,62.431l183.9-49.255l-16.683-62.502H255.756z M944.236,577.681l-16.674,62.501l183.9,49.247l16.674-62.432l-183.9-49.318 V577.681z M472.66,986.032v85.686h254.687v-85.673H472.661L472.66,986.032z M472.66,1114.314V1200h254.687v-85.672H472.661 L472.66,1114.314z" fill="currentColor"/></svg>
@@ -49,6 +58,7 @@
       <h3>{{ i18n "home_why_content_title" }}</h3>
       <p>{{ i18n "home_why_content_desc" }}</p>
     </article>
+
     <article class="card card--icon">
       <div class="card__icon">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.07868 5.06891C8.87402 1.27893 15.0437 1.31923 18.8622 5.13778C22.6824 8.95797 22.7211 15.1313 18.9262 18.9262C15.1312 22.7211 8.95793 22.6824 5.13774 18.8622C2.87389 16.5984 1.93904 13.5099 2.34047 10.5812C2.39672 10.1708 2.775 9.88377 3.18537 9.94002C3.59575 9.99627 3.88282 10.3745 3.82658 10.7849C3.4866 13.2652 4.27782 15.881 6.1984 17.8016C9.44288 21.0461 14.6664 21.0646 17.8655 17.8655C21.0646 14.6664 21.046 9.44292 17.8015 6.19844C14.5587 2.95561 9.33889 2.93539 6.13935 6.12957L6.88705 6.13333C7.30126 6.13541 7.63535 6.47288 7.63327 6.88709C7.63119 7.3013 7.29372 7.63539 6.87951 7.63331L4.33396 7.62052C3.92269 7.61845 3.58981 7.28556 3.58774 6.8743L3.57495 4.32874C3.57286 3.91454 3.90696 3.57707 4.32117 3.57498C4.73538 3.5729 5.07285 3.907 5.07493 4.32121L5.07868 5.06891ZM11.9999 7.24992C12.4141 7.24992 12.7499 7.58571 12.7499 7.99992V11.6893L15.0302 13.9696C15.3231 14.2625 15.3231 14.7374 15.0302 15.0302C14.7373 15.3231 14.2624 15.3231 13.9696 15.0302L11.2499 12.3106V7.99992C11.2499 7.58571 11.5857 7.24992 11.9999 7.24992Z" fill="currentColor"/></svg>
@@ -64,6 +74,7 @@
     <p class="eyebrow">{{ i18n "nav_activities" }}</p>
     <h2>{{ i18n "events_upcoming" }}</h2>
   </div>
+
   <div class="card-grid card-grid--blog">
     {{ range first 3 (where .Site.RegularPages "Section" "events") }}
       {{ $e := . }}
@@ -71,11 +82,22 @@
         <a href="{{ $e.RelPermalink }}">
           <figure class="card__image">
             {{ with $e.Params.image }}
-              <img src="{{ . | relURL }}" alt="{{ $e.Title }}" loading="lazy" width="400" height="250">
+              <img
+                src="{{ . | strings.TrimPrefix "/" | relURL }}"
+                alt="{{ $e.Title }}"
+                loading="lazy"
+                width="400"
+                height="250">
             {{ else }}
-              <img src="{{ "images/brand/logo-vss-uss.png" | relURL }}" alt="VSS-USS logo" loading="lazy" width="400" height="250">
+              <img
+                src="{{ "images/brand/logo-vss-uss.png" | relURL }}"
+                alt="VSS-USS logo"
+                loading="lazy"
+                width="400"
+                height="250">
             {{ end }}
           </figure>
+
           <p class="card__meta">{{ $e.Date.Format "2 Jan 2006" }}</p>
           <h3>{{ $e.Title }}</h3>
         </a>
@@ -89,6 +111,7 @@
     <p class="eyebrow">{{ i18n "nav_blog" }}</p>
     <h2>{{ i18n "blog_latest" }}</h2>
   </div>
+
   <div class="card-grid card-grid--blog">
     {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
       {{ $p := . }}
@@ -96,15 +119,16 @@
         <a href="{{ $p.RelPermalink }}">
           <figure class="card__image">
             {{ with $p.Params.image }}
-              <img src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" width="400" height="250">
+              <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $p.Title }}">
             {{ else }}
               {{ with $p.Resources.GetMatch "feature*" }}
-                <img src="{{ .RelPermalink }}" alt="{{ $p.Title }}" loading="lazy" width="400" height="250">
+                <img src="{{ .RelPermalink }}" alt="{{ $p.Title }}">
               {{ else }}
-              <img src="{{ "images/brand/logo-vss-uss.png" | relURL }}" alt="VSS-USS logo" loading="lazy" width="400" height="250">
+                <img src="{{ "images/brand/logo-vss-uss.png" | relURL }}" alt="VSS-USS logo">
               {{ end }}
             {{ end }}
           </figure>
+
           <p class="card__meta">{{ $p.Date.Format "2 Jan 2006" }}</p>
           <h3>{{ $p.Title }}</h3>
         </a>
@@ -118,6 +142,7 @@
     <p class="eyebrow">{{ i18n "home_testimonials_eyebrow" }}</p>
     <h2>{{ i18n "home_testimonials_title" }}</h2>
   </div>
+
   <div class="card-grid card-grid--three">
     <blockquote class="card quote-card">
       <div class="quote-card__author-icon">
@@ -182,6 +207,7 @@
     <h2>{{ i18n "home_newsletter_title" }}</h2>
     <p>{{ i18n "home_newsletter_desc" }}</p>
   </div>
+
   <form class="newsletter-form">
     <input type="email" placeholder="Email" aria-label="Email" required>
     <button class="button button--primary" type="submit">{{ i18n "footer_newsletter" }}</button>

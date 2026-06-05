@@ -34,10 +34,11 @@
         </article>
       {{ end }}
     </div>
+
     <aside class="sidebar-card card">
       <h2>Popularno</h2>
       {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
-        <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        <p><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></p>
       {{ end }}
     </aside>
   </div>

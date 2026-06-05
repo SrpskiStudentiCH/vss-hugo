@@ -22,6 +22,7 @@
       {{ if .Params.toc }}<aside class="toc">{{ .TableOfContents }}</aside>{{ end }}
       {{ .Content }}
     </div>
+
     <aside class="sidebar-card card author-card">
       <h2>Autor</h2>
       <p>{{ with .Params.author }}{{ . }}{{ else }}Editorial Team{{ end }}</p>
@@ -29,7 +30,7 @@
       <h3>Povezano</h3>
       {{ range first 4 (where .Site.RegularPages "Section" "blog") }}
         {{ if ne .RelPermalink $.RelPermalink }}
-          <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+          <p><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></p>
         {{ end }}
       {{ end }}
     </aside>
