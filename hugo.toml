@@ -1,4 +1,4 @@
-baseURL = "https://srpskistudenti.ch/"
+baseURL = "https://proton-org-rs.github.io/vss-hugo/"
 title = "Srpski studenti u Švajcarskoj"
 languageCode = "sr-RS"
 defaultContentLanguage = "sr"
