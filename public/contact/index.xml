@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kontakt on Srpski studenti u Švajcarskoj</title><link>https://srpskistudenti.ch/contact/</link><description>Recent content in Kontakt on Srpski studenti u Švajcarskoj</description><generator>Hugo</generator><language>sr</language><lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://srpskistudenti.ch/contact/index.xml" rel="self" type="application/rss+xml"/><item><title>Gradska predstavništva</title><link>https://srpskistudenti.ch/contact/chapters/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://srpskistudenti.ch/contact/chapters/</guid><description>&lt;p>cities = [
-{ name = &amp;ldquo;Zürich&amp;rdquo;, image = &amp;ldquo;Zurich.jpg&amp;rdquo; },
-{ name = &amp;ldquo;Bern&amp;rdquo;, image = &amp;ldquo;Bern.jpg&amp;rdquo; },
-{ name = &amp;ldquo;Lausanne&amp;rdquo;, image = &amp;ldquo;Lausanne.jpg&amp;rdquo; },
-{ name = &amp;ldquo;Geneva&amp;rdquo;, image = &amp;ldquo;Geneva.jpg&amp;rdquo; },
-{ name = &amp;ldquo;Basel&amp;rdquo;, image = &amp;ldquo;Basel.jpg&amp;rdquo; }
-]&lt;/p></description></item></channel></rss>
