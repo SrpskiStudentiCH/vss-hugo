@@ -22,7 +22,7 @@
             {{ with $e.Params.image }}
               <img src="{{ . | relURL }}" alt="{{ $e.Title }}" loading="lazy" width="400" height="200">
             {{ else }}
-              <img src="/images/brand/logo-vss-uss.png" alt="VSS-USS logo" loading="lazy" width="400" height="200">
+              <img src="{{ "images/brand/logo-vss-uss.png" | relURL }}" alt="VSS-USS logo" loading="lazy" width="400" height="200">
             {{ end }}
           </figure>
           <p class="card__meta">{{ $e.Date.Format "2 Jan 2006" }}</p>

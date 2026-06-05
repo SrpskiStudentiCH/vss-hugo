@@ -1,22 +1,26 @@
 <footer class="site-footer">
   <div class="container">
     <div class="site-footer__grid">
-      
+
       <!-- About Section -->
       <div class="site-footer__section">
         <a class="site-footer__brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
+
           <img
             class="site-footer__logo"
-            src="{{ .Site.Params.brandLogo | default "/images/brand/logo-vss-uss.png" | relURL }}"
+            src="{{ (.Site.Params.brandLogo | default "images/brand/logo-vss-uss.png") | strings.TrimPrefix "/" | relURL }}"
             alt="{{ .Site.Title }}"
             width="48"
             height="48"
             loading="lazy"
             decoding="async"
           >
+
           <h3 class="site-footer__title">{{ .Site.Title }}</h3>
         </a>
+
         <p>{{ i18n "site_description" }}</p>
+
         <div class="site-footer__socials">
           <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
@@ -72,13 +76,15 @@
           <button type="submit" aria-label="Subscribe">→</button>
         </form>
       </div>
-      
+
       <div class="site-footer__copyright">
         <p>&copy; {{ now.Year }} {{ .Site.Title }}. {{ i18n "footer_follow" }}
+
           <span class="footer-langs">
             {{ range .Site.Languages }}
               {{ $code := .Lang }}
               {{ $target := "" }}
+
               {{ if eq $.Lang $code }}
                 {{ $target = $.RelPermalink }}
               {{ else }}
@@ -86,6 +92,7 @@
                   {{ if eq .Lang $code }}{{ $target = .RelPermalink }}{{ end }}
                 {{ end }}
               {{ end }}
+
               {{ if eq $target "" }}
                 {{ range $.Sites }}
                   {{ if eq .Language.Lang $code }}{{ $target = .Home.RelPermalink }}{{ end }}
@@ -94,8 +101,10 @@
               <a href="{{ $target }}" lang="{{ $code }}" {{ if eq $.Lang $code }}aria-current="page"{{ end }}>{{ upper $code }}</a>
             {{ end }}
           </span>
+
         </p>
       </div>
     </div>
+
   </div>
 </footer>

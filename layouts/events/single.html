@@ -13,7 +13,7 @@
 
   {{ with .Params.image }}
     <figure class="article-cover">
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
     </figure>
   {{ end }}
 

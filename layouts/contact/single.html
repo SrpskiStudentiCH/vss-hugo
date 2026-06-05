@@ -15,7 +15,7 @@
           <article class="card city-card">
             <a href="#">
               <div class="card__image">
-                <img src="/images/cities/{{ .image }}" alt="{{ .name }}" loading="lazy" width="300" height="200">
+                <img src="{{ (printf "images/cities/%s" .image) | relURL }}" alt="{{ .name }}" loading="lazy" width="300" height="200">
               </div>
               <h3>{{ .name }}</h3>
             </a>

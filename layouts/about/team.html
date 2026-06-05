@@ -22,11 +22,22 @@
     <div class="card-grid card-grid--board">
       {{ range .Params.members }}
         <article class="card board-card">
+
           <figure class="board-card__media{{ if not .image }} board-card__media--logo{{ end }}">
             {{ if .image }}
-              <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy" width="300" height="400">
+              <img
+                src="{{ .image | strings.TrimPrefix "/" | relURL }}"
+                alt="{{ .name }}"
+                loading="lazy"
+                width="300"
+                height="400">
             {{ else }}
-              <img src="/images/brand/logo-vss-uss.png" alt="Srpski studenti u Švajcarskoj" loading="lazy" width="300" height="400">
+              <img
+                src="{{ "images/brand/logo-vss-uss.png" | relURL }}"
+                alt="Srpski studenti u Švajcarskoj"
+                loading="lazy"
+                width="300"
+                height="400">
             {{ end }}
           </figure>
 
@@ -52,6 +63,7 @@
               <a href="mailto:{{ .email }}">{{ .email }}</a>
             </div>
           </div>
+
         </article>
       {{ end }}
     </div>

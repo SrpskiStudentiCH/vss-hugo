@@ -1,7 +1,7 @@
 +++
 title = "Alumni"
 description = "Alumni mreža koja povezuje bivše i sadašnje članove kroz događaje, kontakte i profesionalnu podršku."
-image = "/images/original/alumni-hero.jpg"
+image = "/vss-hugo/images/original/alumni-hero.jpg"
 +++
 
 ## SAVS / VSAS alumni mreža
