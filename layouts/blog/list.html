@@ -18,7 +18,7 @@
           <a href="{{ $post.RelPermalink }}">
             <figure class="card__image">
               {{ with $post.Params.image }}
-                <img src="{{ . | relURL }}" alt="{{ $post.Title }}" loading="lazy" width="400" height="250">
+                <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $post.Title }}" loading="lazy" width="400" height="250">
               {{ else }}
                 {{ with $post.Resources.GetMatch "feature*" }}
                   <img src="{{ .RelPermalink }}" alt="{{ $post.Title }}" loading="lazy" width="400" height="250">
