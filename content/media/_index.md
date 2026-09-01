@@ -1,5 +1,6 @@
 +++
 title = "Mediji"
+eyebrow = "Mediji"
 description = "Video, javni nastupi i medijske reference organizacije."
 image = "/images/imported/wp-content/uploads/2020/07/USAS-183-1024x576-1-768x432.jpg"
 +++

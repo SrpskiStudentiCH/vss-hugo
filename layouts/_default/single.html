@@ -1,12 +1,13 @@
 {{ define "main" }}
 <article class="content-page">
   <section class="page-hero container">
-    <p class="eyebrow">{{ .Section | humanize }}</p>
+    {{ partial "breadcrumbs.html" . }}
+    {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
     {{ with .Params.image }}
       <figure class="hero-image">
-        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Title }}" loading="lazy" width="1200" height="675">
       </figure>
     {{ end }}
   </section>

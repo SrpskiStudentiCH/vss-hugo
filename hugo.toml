@@ -74,6 +74,7 @@ buildExpired = false
     source = "content"
     target = "content"
     lang = "sr"
+    excludeFiles = ["en/**", "de/**"]
   [[module.mounts]]
     source = "content/en"
     target = "content"
