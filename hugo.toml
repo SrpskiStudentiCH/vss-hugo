@@ -15,14 +15,14 @@ buildExpired = false
   ogImage = "/images/brand/logo-vss-uss.png"
   defaultImage = "/images/og-default.jpg"
 
+  # URL Google Form-a za učlanjenje (otvara se u novom tabu).
+  # Dok je prazno, CTA vodi na kontakt stranicu.
+  joinFormUrl = "https://forms.gle/mUhni8ENvspYyWW68"
+
   [params.contact]
     email = "info@srpskistudenti.ch"
     linkedin = "https://www.linkedin.com/"
     instagram = "https://www.instagram.com/verein_serbischer_studierender/"
-
-  # URL Google Form-a za učlanjenje (otvara se u novom tabu).
-  # Dok je prazno, CTA vodi na kontakt stranicu.
-  joinFormUrl = ""
 
 [pagination]
   pagerSize = 9
