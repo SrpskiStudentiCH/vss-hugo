@@ -2,18 +2,18 @@
 <article class="container content-page article-page">
   <header class="page-hero article-hero">
     {{ partial "breadcrumbs.html" . }}
-    <p class="eyebrow">Event</p>
+    <p class="eyebrow">{{ i18n "nav_activities" }}</p>
     <h1>{{ .Title }}</h1>
     <div class="article-meta">
       <span>{{ .Date.Format "2 Jan 2006" }}</span>
-      {{ with .Params.city }}<span>{{ . }}</span>{{ end }}
-      {{ with .Params.event_type }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.semester }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.event_type }}<span>{{ . | humanize }}</span>{{ end }}
     </div>
   </header>
 
   {{ with .Params.image }}
     <figure class="article-cover">
-      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+      <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Title }}" loading="lazy">
     </figure>
   {{ end }}
 
@@ -23,9 +23,10 @@
     </div>
 
     <aside class="sidebar-card card">
-      <h2>Detalji</h2>
-      <p><strong>Grad:</strong> {{ with .Params.city }}{{ . }}{{ else }}TBA{{ end }}</p>
-      <p><strong>Tip:</strong> {{ with .Params.event_type }}{{ . }}{{ else }}community{{ end }}</p>
+      <h2>{{ i18n "events_details" }}</h2>
+      <p><strong>{{ i18n "events_date" }}:</strong> {{ .Date.Format "2 Jan 2006" }}</p>
+      <p><strong>{{ i18n "events_type" }}:</strong> {{ with .Params.event_type }}{{ . | humanize }}{{ else }}community{{ end }}</p>
+      {{ with .Params.semester }}<p><strong>{{ i18n "events_semester" }}:</strong> {{ . }}</p>{{ end }}
     </aside>
   </div>
 </article>

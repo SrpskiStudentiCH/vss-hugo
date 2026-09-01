@@ -16,20 +16,17 @@
             decoding="async"
           >
 
-          <h3 class="site-footer__title">{{ .Site.Title }}</h3>
+          <h3 class="site-footer__title">{{ i18n "site_title" }}</h3>
         </a>
 
         <p>{{ i18n "site_description" }}</p>
 
         <div class="site-footer__socials">
-          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+          <a href="{{ site.Params.contact.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" fill="currentColor"/></svg>
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <a href="{{ site.Params.contact.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" fill="currentColor"/></svg>
           </a>
         </div>
       </div>
@@ -40,7 +37,7 @@
         <ul class="site-footer__links">
           <li><a href="{{ "about" | relLangURL }}">{{ i18n "nav_about" }}</a></li>
           <li><a href="{{ "events" | relLangURL }}">{{ i18n "nav_events" }}</a></li>
-          <li><a href="{{ "blog" | relLangURL }}">{{ i18n "nav_blog" }}</a></li>
+          <li><a href="{{ "join" | relLangURL }}">{{ i18n "nav_join" }}</a></li>
           <li><a href="{{ "contact" | relLangURL }}">{{ i18n "nav_contact" }}</a></li>
         </ul>
       </div>
@@ -49,19 +46,20 @@
       <div class="site-footer__section">
         <h4 class="site-footer__subtitle">{{ i18n "nav_guide" }}</h4>
         <ul class="site-footer__links">
-          <li><a href="{{ "guide" | relLangURL }}">{{ i18n "guide_living" }}</a></li>
           <li><a href="{{ "guide" | relLangURL }}">{{ i18n "guide_studying" }}</a></li>
-          <li><a href="{{ "alumni" | relLangURL }}">{{ i18n "alumni_stories" }}</a></li>
+          <li><a href="{{ "documents" | relLangURL }}">{{ i18n "nav_about_documents" }}</a></li>
+          <li><a href="{{ "alumni" | relLangURL }}">{{ i18n "nav_alumni" }}</a></li>
+          <li><a href="{{ "support" | relLangURL }}">{{ i18n "nav_support" }}</a></li>
         </ul>
       </div>
 
-      <!-- Legal -->
+      <!-- Official Contact Channels -->
       <div class="site-footer__section">
-        <h4 class="site-footer__subtitle">{{ i18n "footer_legal" }}</h4>
+        <h4 class="site-footer__subtitle">{{ i18n "nav_contact" }}</h4>
         <ul class="site-footer__links">
-          <li><a href="#">{{ i18n "footer_privacy" }}</a></li>
-          <li><a href="#">{{ i18n "footer_terms" }}</a></li>
-          <li><a href="{{ "contact" | relLangURL }}">{{ i18n "footer_contact" }}</a></li>
+          <li><a href="mailto:{{ site.Params.contact.email }}">{{ site.Params.contact.email }}</a></li>
+          <li><a href="{{ site.Params.contact.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="{{ site.Params.contact.instagram }}" target="_blank" rel="noopener">Instagram</a></li>
         </ul>
       </div>
 

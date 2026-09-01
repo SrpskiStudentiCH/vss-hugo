@@ -1,0 +1,6 @@
+{{/* Render hook for markdown images: prepend baseURL path to root-relative srcs */}}
+{{ $src := .Destination }}
+{{ if hasPrefix $src "/" }}
+  {{ $src = strings.TrimPrefix "/" $src | relURL }}
+{{ end }}
+<img src="{{ $src | safeURL }}" alt="{{ .Text }}" loading="lazy" {{ with .Title }}title="{{ . }}"{{ end }}>

@@ -11,8 +11,8 @@
 {{ end }}
 <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
 <meta name="theme-color" content="#f6f4ef">
-<link rel="icon" type="image/png" href="{{ $brandLogo | relURL }}">
-<link rel="apple-touch-icon" href="{{ $brandLogo | relURL }}">
+<link rel="icon" type="image/png" href="{{ $brandLogo | strings.TrimPrefix "/" | relURL }}">
+<link rel="apple-touch-icon" href="{{ $brandLogo | strings.TrimPrefix "/" | relURL }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">

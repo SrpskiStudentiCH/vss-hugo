@@ -1,49 +1,15 @@
 +++
 title = "Contact Us"
-description = "Get in touch with Serbian Students in Switzerland team."
+description = "Official communication channels: email, LinkedIn and Instagram."
 layout = "contact"
 +++
 
-## Get In Touch
+## Official Communication Channels
 
-Have questions? Want to collaborate? Interested in partnership opportunities?
+You can reach us through the following official channels:
 
-We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+- **Email:** [info@srpskistudenti.ch](mailto:info@srpskistudenti.ch)
+- **LinkedIn:** [Serbian Students in Switzerland](https://www.linkedin.com/)
+- **Instagram:** [@verein_serbischer_studierender](https://www.instagram.com/verein_serbischer_studierender/)
 
-### Direct Contact
-
-**Email:** [contact@srpskistudenti.ch](mailto:contact@srpskistudenti.ch)
-
-**Location:** Zurich, Switzerland (with chapters in Geneva, Bern, Lausanne, Basil)
-
-### Leadership
-
-**Board President:** [Name]  
-**Vice President:** [Name]  
-**Communications Lead:** [Name]
-
-### Social Media
-
-- Instagram: [@srpskistudenti.ch](https://instagram.com)
-- LinkedIn: [Serbian Students in Switzerland](https://linkedin.com)
-- Facebook: [Serbian Students in Switzerland](https://facebook.com)
-
----
-
-## Contact Form
-
-Name *  
-[Text input]
-
-Email *  
-[Email input]
-
-Subject *  
-[Text input]
-
-Message *  
-[Textarea]
-
-[Send Button]
-
-We typically respond within 48 hours.
+We do not publish private phone numbers. The fastest way to reach us is by email.

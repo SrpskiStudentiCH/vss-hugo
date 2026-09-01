@@ -2,11 +2,11 @@
 <section class="container listing-page listing-page--blog">
   <header class="page-hero">
     {{ partial "breadcrumbs.html" . }}
-    <p class="eyebrow">Blog</p>
+    <p class="eyebrow">{{ i18n "blog_title" }}</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
     <div class="search-bar">
-      <input id="post-search" type="search" placeholder="Pretraži blog..." aria-label="Pretraži blog">
+      <input id="post-search" type="search" placeholder="{{ i18n "blog_search" }}" aria-label="{{ i18n "blog_search" }}">
     </div>
   </header>
 
@@ -36,7 +36,7 @@
     </div>
 
     <aside class="sidebar-card card">
-      <h2>Popularno</h2>
+      <h2>{{ i18n "blog_popular" }}</h2>
       {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
         <p><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></p>
       {{ end }}

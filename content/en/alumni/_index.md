@@ -1,11 +1,13 @@
 +++
 title = "Alumni"
-description = "Meet successful alumni making impact across industries and continents."
+description = "Studies end — the community stays. The alumni network connects generations of former and current members."
 layout = "alumni"
+statement = "Studies end. The community stays."
+quote = "The alumni network connects generations: the experience of senior members becomes a guide for new generations of students."
+highlights = [
+	{ title = "Connection between generations", text = "Former members stay connected to the community and follow new generations of students." },
+	{ title = "Professional networking", text = "Alumni bring experience, contacts and practical advice that accelerate development." },
+	{ title = "Joint events", text = "Shared activities and partnerships with the academic association VSAS." }
+]
+vsas_url = "https://srpskistudenti.ch"
 +++
-
-Our alumni network spans across industries and continents. These individuals have gone on to successful careers and continue to support the community.
-
-## Alumni Stories
-
-Read inspiring stories from our community members who have graduated and achieved their goals.

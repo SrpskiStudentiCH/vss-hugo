@@ -1,27 +1,97 @@
 {{ define "main" }}
-{{/* Each "## heading" section of the page content is rendered as its own card. */}}
-{{ $parts := split .Content "<h2" }}
-{{ $intro := index $parts 0 | strings.TrimSpace }}
-<article class="container content-page">
-  <header class="page-hero">
+<article class="about-page">
+  <header class="page-hero container">
     {{ partial "breadcrumbs.html" . }}
-    <p class="eyebrow">O nama</p>
+    <p class="eyebrow">{{ i18n "nav_about" }}</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
   </header>
 
-  {{ with $intro }}
-    <div class="prose">{{ . | safeHTML }}</div>
+  {{ with .Params.statement }}
+    <section class="container section-spacing section-spacing--tight">
+      <p class="statement about-statement reveal">{{ . }}</p>
+    </section>
   {{ end }}
 
-  {{ if gt (len $parts) 1 }}
-    <div class="card-grid about-cards">
-      {{ range after 1 $parts }}
-        <section class="card info-card">
-          {{ printf "<h2%s" . | safeHTML }}
-        </section>
+  <section class="container section-spacing">
+    <div class="split">
+      {{ with .Params.image }}
+        <figure class="split__media reveal">
+          <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Title }}" loading="lazy" width="900" height="675">
+        </figure>
       {{ end }}
+      <div class="split__body reveal">
+        <p class="eyebrow">{{ .Params.who_title }}</p>
+        <h2 class="sr-only">{{ .Params.who_title }}</h2>
+        <p class="muted">{{ .Params.who_text }}</p>
+        <div class="stat-strip">
+          <div class="stat-strip__item">
+            <strong>{{ .Params.founded | default "2015" }}</strong>
+            <span>{{ i18n "about_founded_label" }}</span>
+          </div>
+          <div class="stat-strip__item">
+            <strong>120+</strong>
+            <span>{{ i18n "home_stats_members" }}</span>
+          </div>
+          <div class="stat-strip__item">
+            <strong>3</strong>
+            <span>{{ i18n "home_stats_languages" }}</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  {{ with .Params.what }}
+    <section class="container section-spacing section-spacing--tight">
+      <div class="tint-band reveal">
+        <div class="section-heading">
+          <p class="eyebrow">{{ $.Params.what_label }}</p>
+        </div>
+        <ol class="num-list">
+          {{ range . }}
+            <li>
+              <div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      </div>
+    </section>
   {{ end }}
+
+  {{ with .Params.values }}
+    <section class="container section-spacing section-spacing--tight">
+      <div class="section-heading reveal">
+        <p class="eyebrow">{{ i18n "about_values" }}</p>
+        <h2 class="sr-only">{{ i18n "about_values" }}</h2>
+      </div>
+      <ul class="card-grid card-grid--three reveal">
+        {{ range . }}
+          <li class="card card--icon">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>{{ . }}</h3>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  <section class="container section-spacing">
+    <div class="accent-band join-cta reveal">
+      <div>
+        <p class="eyebrow">{{ i18n "about_cta_title" }}</p>
+        <h2 class="sr-only">{{ i18n "about_cta_title" }}</h2>
+      </div>
+      <div class="section-cta">
+        <a class="button button--lg" href="{{ "documents" | relLangURL }}">{{ i18n "about_documents_cta" }}</a>
+        <a class="button button--lg button--secondary" href="{{ "join" | relLangURL }}">{{ i18n "about_join_cta" }}</a>
+      </div>
+    </div>
+  </section>
 </article>
 {{ end }}

@@ -6,7 +6,7 @@ defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 summaryLength = 28
 buildDrafts = false
-buildFuture = false
+buildFuture = true
 buildExpired = false
 
 [params]
@@ -14,6 +14,15 @@ buildExpired = false
   brandLogo = "/images/brand/logo-vss-uss.png"
   ogImage = "/images/brand/logo-vss-uss.png"
   defaultImage = "/images/og-default.jpg"
+
+  [params.contact]
+    email = "info@srpskistudenti.ch"
+    linkedin = "https://www.linkedin.com/"
+    instagram = "https://www.instagram.com/verein_serbischer_studierender/"
+
+  # URL Google Form-a za učlanjenje (otvara se u novom tabu).
+  # Dok je prazno, CTA vodi na kontakt stranicu.
+  joinFormUrl = ""
 
 [pagination]
   pagerSize = 9
@@ -38,7 +47,6 @@ buildExpired = false
 [taxonomies]
   category = "categories"
   tag = "tags"
-  city = "cities"
   type = "types"
 
 [languages]
@@ -49,11 +57,11 @@ buildExpired = false
   [languages.en]
     languageName = "English"
     weight = 2
-    contentDir = "content"
+    contentDir = "content/en"
   [languages.de]
     languageName = "Deutsch"
     weight = 3
-    contentDir = "content"
+    contentDir = "content/de"
 
 [module]
   [[module.mounts]]
@@ -65,6 +73,15 @@ buildExpired = false
   [[module.mounts]]
     source = "content"
     target = "content"
+    lang = "sr"
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    lang = "en"
+  [[module.mounts]]
+    source = "content/de"
+    target = "content"
+    lang = "de"
   [[module.mounts]]
     source = "layouts"
     target = "layouts"

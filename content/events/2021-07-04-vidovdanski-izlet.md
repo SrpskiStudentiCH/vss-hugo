@@ -2,8 +2,8 @@
 title = "Vidovdanski izlet 2021"
 date = 2021-07-04
 draft = false
-city = "Greifensee"
 event_type = "community"
+semester = "Prolećni semestar 2021"
 description = "Završetak semestra i Vidovdan obeleženi su druženjem, roštiljem i pogledom na jezero."
 image = "/images/events/vidovdanski-izlet-2021-cover.jpg"
 categories = ["Events"]
