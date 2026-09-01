@@ -260,7 +260,7 @@ if (siteHeader) {
 // SCROLL REVEAL — lightweight IntersectionObserver micro-animations
 // ============================================================================
 
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const prefersReducedMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)').matches : false;
 
 function initializeReveal() {
 	const elements = document.querySelectorAll('.reveal');
