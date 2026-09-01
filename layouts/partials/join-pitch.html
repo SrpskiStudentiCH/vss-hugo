@@ -1,0 +1,36 @@
+{{ $title := .title }}
+{{ $desc := .desc }}
+{{ $items := .items }}
+{{ $cta := .cta }}
+{{ $ctaText := .ctaText }}
+<div class="join-split">
+  <div class="reveal">
+    <div class="section-heading">
+      <p class="eyebrow">{{ $title }}</p>
+      <h2 class="sr-only">{{ $title }}</h2>
+      {{ with $desc }}<p class="section-heading__desc">{{ . }}</p>{{ end }}
+    </div>
+
+    <ul class="check-list">
+      {{ range $items }}
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>{{ . }}</span>
+        </li>
+      {{ end }}
+    </ul>
+
+    {{ if and $cta $ctaText }}
+      <a class="button button--primary" href="{{ $cta }}">{{ $ctaText }}</a>
+    {{ end }}
+  </div>
+
+  <div class="price reveal">
+    <p class="eyebrow">{{ i18n "join_price_title" }}</p>
+    <h2 class="sr-only">{{ i18n "join_price_title" }}</h2>
+    <p class="price__value">
+      <span class="price__currency">{{ i18n "join_price_currency" }}</span>{{ i18n "join_price_value" }}
+    </p>
+    <p class="price__period">{{ i18n "join_price_period" }}</p>
+  </div>
+</div>

@@ -2,7 +2,7 @@
 <article class="container content-page">
   <header class="page-hero">
     {{ partial "breadcrumbs.html" . }}
-    <p class="eyebrow">Vodič</p>
+    <p class="eyebrow">{{ i18n "guide_title" }}</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
   </header>

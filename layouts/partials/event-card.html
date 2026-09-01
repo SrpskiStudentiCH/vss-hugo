@@ -1,0 +1,33 @@
+{{ $e := .event }}
+<article class="event-card reveal">
+  <a href="{{ $e.RelPermalink }}">
+    <figure class="event-card__media{{ if not $e.Params.image }} event-card__media--logo{{ end }}">
+      {{ with $e.Params.image }}
+        <img
+          src="{{ . | strings.TrimPrefix "/" | relURL }}"
+          alt="{{ $e.Title }}"
+          loading="lazy"
+          width="640"
+          height="360">
+      {{ else }}
+        <img
+          src="{{ "images/brand/logo-vss-uss.png" | relURL }}"
+          alt="VSS-USS logo"
+          loading="lazy"
+          width="640"
+          height="360">
+      {{ end }}
+      <span class="event-card__badge">{{ $e.Params.event_type | default "event" | humanize }}</span>
+    </figure>
+
+    <div class="event-card__body">
+      <p class="card__meta">{{ $e.Date.Format "2 Jan 2006" }}</p>
+      <h3 class="event-card__title">{{ $e.Title }}</h3>
+      {{ with $e.Params.description }}<p class="event-card__desc">{{ . }}</p>{{ end }}
+      <span class="event-card__cta">
+        {{ i18n "events_more_info" }}
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </div>
+  </a>
+</article>

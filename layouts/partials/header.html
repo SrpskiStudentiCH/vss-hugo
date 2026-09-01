@@ -10,7 +10,7 @@
         loading="eager"
         decoding="async"
       >
-      <span class="brand__text">{{ .Site.Title }}</span>
+      <span class="brand__text">{{ i18n "site_title" }}</span>
     </a>
 
     <div class="site-header__controls">
@@ -58,15 +58,16 @@
         <div class="nav-dropdown__menu">
           <a href="{{ "about" | relLangURL }}">{{ i18n "nav_about_history" }}</a>
           <a href="{{ "about/board" | relLangURL }}">{{ i18n "nav_about_team" }}</a>
-          <a href="{{ "about#dokumenta" | relLangURL }}">{{ i18n "nav_about_documents" }}</a>
+          <a href="{{ "documents" | relLangURL }}">{{ i18n "nav_about_documents" }}</a>
           <a href="{{ "alumni" | relLangURL }}">{{ i18n "nav_alumni" }}</a>
+          <a href="{{ "support" | relLangURL }}">{{ i18n "nav_support" }}</a>
         </div>
       </div>
 
       <a href="{{ "guide" | relLangURL }}" class="nav-link">{{ i18n "nav_studying" }}</a>
       <a href="{{ "events" | relLangURL }}" class="nav-link">{{ i18n "nav_activities" }}</a>
-      <a href="{{ "blog" | relLangURL }}" class="nav-link">{{ i18n "nav_blog" }}</a>
       <a href="{{ "contact" | relLangURL }}" class="nav-link">{{ i18n "nav_contact" }}</a>
+      <a href="{{ "join" | relLangURL }}" class="nav-link nav-link--cta">{{ i18n "nav_join" }}</a>
 
       <span class="site-nav__langs" role="group" aria-label="{{ i18n "nav_language" }}">
         {{ range .Site.Languages }}

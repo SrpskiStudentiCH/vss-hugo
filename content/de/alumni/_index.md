@@ -1,11 +1,14 @@
 +++
 title = "Alumni"
-description = "Treffen Sie erfolgreiche Alumni, die in verschiedenen Branchen und auf verschiedenen Kontinenten Auswirkungen haben."
+description = "Das Studium endet — die Gemeinschaft bleibt. Das Alumni-Netzwerk verbindet Generationen ehemaliger und aktueller Mitglieder."
 layout = "alumni"
+statement = "Das Studium endet. Die Gemeinschaft bleibt."
+quote = "Das Alumni-Netzwerk verbindet Generationen: Die Erfahrung älterer Mitglieder wird zum Wegweiser für neue Studierendengenerationen."
+
+highlights = [
+	{ title = "Kontakt zwischen Generationen", text = "Ehemalige Mitglieder bleiben mit der Gemeinschaft verbunden und begleiten neue Studierendengenerationen." },
+	{ title = "Professionelles Netzwerken", text = "Alumni bringen Erfahrung, Kontakte und praktische Ratschläge ein, die die Entwicklung beschleunigen." },
+	{ title = "Gemeinsame Veranstaltungen", text = "Gemeinsame Aktivitäten und Partnerschaften mit dem Akademikerverein VSAS." }
+]
+vsas_url = "https://srpskistudenti.ch"
 +++
-
-Unser Alumni-Netzwerk erstreckt sich über Branchen und Kontinente. Diese Personen haben erfolgreiche Karrieren absolviert und unterstützen weiterhin die Gemeinschaft.
-
-## Alumni-Geschichten
-
-Lesen Sie inspirierende Geschichten von Gemeindemitgliedern, die ihren Abschluss gemacht und ihre Ziele erreicht haben.

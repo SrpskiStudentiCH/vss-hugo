@@ -2,34 +2,12 @@
 <article class="container content-page">
   <header class="page-hero">
     {{ partial "breadcrumbs.html" . }}
-    <p class="eyebrow">Kontakt</p>
+    <p class="eyebrow">{{ i18n "contact_title" }}</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
   </header>
-  <div class="card-grid card-grid--two">
-    <div class="card prose">
-      {{ .Content }}
-      {{ with .Params.cities }}
-      <div class="city-cards">
-        {{ range . }}
-          <article class="card city-card">
-            <a href="#">
-              <div class="card__image">
-                <img src="{{ (printf "images/cities/%s" .image) | relURL }}" alt="{{ .name }}" loading="lazy" width="300" height="200">
-              </div>
-              <h3>{{ .name }}</h3>
-            </a>
-          </article>
-        {{ end }}
-      </div>
-      {{ end }}
-    </div>
-    <form class="card contact-form">
-      <label>Ime<input type="text" name="name"></label>
-      <label>Email<input type="email" name="email"></label>
-      <label>Poruka<textarea name="message" rows="6"></textarea></label>
-      <button class="button button--primary" type="submit">Pošalji</button>
-    </form>
+  <div class="prose">
+    {{ .Content }}
   </div>
 </article>
 {{ end }}

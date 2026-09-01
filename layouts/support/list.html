@@ -1,0 +1,49 @@
+{{ define "main" }}
+<article class="support-page">
+  <header class="page-hero container">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">{{ i18n "nav_support" }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ with .Params.ways }}
+    <section class="container section-spacing section-spacing--tight">
+      <div class="support-ways">
+        {{ range . }}
+          <div class="support-way support-way--{{ .kind | default "partner" }} reveal">
+            <div class="card__icon" aria-hidden="true">
+              {{ if eq .kind "donate" }}
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-7.5-4.6-9.3-9.2C1.2 8.2 3.2 5 6.4 5c2 0 3.6 1.1 4.6 2.8h2c1-1.7 2.6-2.8 4.6-2.8 3.2 0 5.2 3.2 3.7 6.8C19.5 16.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              {{ else if eq .kind "patron" }}
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3 5 6v5c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6l-7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 11.5 2 2 4-4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              {{ else }}
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 14-2.5-2.5L9 9m6 5 2.5-2.5L15 9M7.5 3l2 2.5a4 4 0 0 0 5.3 0l2-2.5M3.5 7l2.5 2a4 4 0 0 1 0 5.3l-2.5 2M20.5 7l-2.5 2a4 4 0 0 0 0 5.3l2.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              {{ end }}
+            </div>
+            <h2>{{ .title }}</h2>
+            <p>{{ .text }}</p>
+            {{ if .url }}
+              <a class="button button--sm {{ if eq .kind "donate" }}button--primary{{ else }}button--secondary{{ end }}" href="{{ .url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }}>
+                {{ .cta }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  <section class="container section-spacing">
+    <div class="accent-band join-cta reveal">
+      <div>
+        <p class="eyebrow">{{ i18n "support_cta_text" }}</p>
+        <h2 class="sr-only">{{ i18n "support_cta_text" }}</h2>
+      </div>
+      <div class="section-cta">
+        <a class="button button--lg" href="{{ printf "mailto:%s?subject=%s" site.Params.contact.email (i18n "support_title") }}">{{ i18n "support_donate_button" }}</a>
+      </div>
+    </div>
+  </section>
+</article>
+{{ end }}

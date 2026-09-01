@@ -1,25 +1,15 @@
 +++
 title = "Kontakt"
-description = "Kontaktiraj tim, pošalji predlog ili se poveži sa predstavništvom u svom gradu."
+description = "Zvanični kanali komunikacije: e-mail, LinkedIn i Instagram."
 layout = "contact"
-
-cities = [
-  { name = "Zürich", image = "Zurich.jpg" },
-  { name = "Bern", image = "Bern.jpg" },
-  { name = "Lausanne", image = "Lausanne.jpg" },
-  { name = "Geneva", image = "Geneva.jpg" },
-  { name = "Basel", image = "Basel.jpg" }
-]
-
 +++
 
+## Zvanični kanali komunikacije
 
-## Kontakt informacije
+Sa nama možete stupiti u kontakt isključivo putem zvaničnih kanala:
 
-- e-mail: info@srpskistudenti.ch
-- Facebook: https://www.facebook.com/srpski.studenti.ch/
-- Instagram: https://www.instagram.com/verein_serbischer_studierender/
+- **E-mail:** [info@srpskistudenti.ch](mailto:info@srpskistudenti.ch)
+- **LinkedIn:** [Srpski studenti u Švajcarskoj](https://www.linkedin.com/)
+- **Instagram:** [@verein_serbischer_studierender](https://www.instagram.com/verein_serbischer_studierender/)
 
-## Gradska predstavništva
-
-Ispod su naša gradska predstavništva. Klikni na karticu za više informacija.
+Privatne brojeve telefona ne objavljujemo. Najbrži odgovor dobijate putem e-maila.
