@@ -243,6 +243,115 @@ function initializeEventFilters() {
 initializeEventFilters();
 
 // ============================================================================
+// PARTNERS CAROUSEL — looping marquee + manual arrows
+// ============================================================================
+
+function initializePartnersCarousel() {
+	const carousel = document.querySelector('[data-partners-carousel]');
+	const wrap = carousel ? carousel.closest('.partners-carousel-wrap') : null;
+	const track = carousel ? carousel.querySelector('.partners-carousel__track') : null;
+	if (!wrap || !track) return;
+
+	const originals = Array.from(track.children);
+	if (originals.length === 0) return;
+
+	let setWidth = 0;
+	let isManual = false;
+
+	const gap = () => parseFloat(getComputedStyle(track).columnGap) || 0;
+
+	const measureSet = () => {
+		const first = originals[0];
+		const last = originals[originals.length - 1];
+		return last.offsetLeft + last.offsetWidth - first.offsetLeft + gap();
+	};
+
+	const addCopy = () => {
+		originals.forEach((item) => {
+			const copy = item.cloneNode(true);
+			copy.setAttribute('aria-hidden', 'true');
+			track.appendChild(copy);
+		});
+	};
+
+	// Enough copies that the scroll position can always be wrapped one set back or forward.
+	const fill = () => {
+		const needed = carousel.clientWidth * 2 + setWidth * 3;
+		let guard = 12;
+		while (track.scrollWidth < needed && guard > 0) {
+			addCopy();
+			guard -= 1;
+		}
+	};
+
+	const setScrollLeft = (value) => {
+		const previous = carousel.style.scrollBehavior;
+		carousel.style.scrollBehavior = 'auto';
+		carousel.scrollLeft = value;
+		carousel.style.scrollBehavior = previous;
+	};
+
+	// Keep the offset inside [setWidth, 2 * setWidth); every set renders identically,
+	// so jumping by one set is invisible and makes the scroll endless in both directions.
+	const wrapPosition = () => {
+		if (setWidth <= 0) return;
+		let left = carousel.scrollLeft;
+		while (left >= setWidth * 2) left -= setWidth;
+		while (left < setWidth) left += setWidth;
+		if (Math.abs(left - carousel.scrollLeft) > 0.5) setScrollLeft(left);
+	};
+
+	const startManual = () => {
+		if (isManual) return;
+		isManual = true;
+		const matrix = new DOMMatrixReadOnly(getComputedStyle(track).transform);
+		const shifted = -matrix.m41;
+		track.classList.remove('is-marquee');
+		setScrollLeft(carousel.scrollLeft + shifted);
+		wrapPosition();
+	};
+
+	const layout = () => {
+		setWidth = measureSet();
+		fill();
+		track.style.setProperty('--marquee-shift', `${setWidth}px`);
+		track.style.setProperty('--marquee-duration', `${Math.max(setWidth / 60, 12)}s`);
+		if (isManual) wrapPosition();
+	};
+
+	layout();
+	track.classList.add('is-marquee');
+
+	let settleTimer;
+	carousel.addEventListener(
+		'scroll',
+		() => {
+			if (!isManual) return;
+			clearTimeout(settleTimer);
+			settleTimer = setTimeout(wrapPosition, 120);
+		},
+		{ passive: true }
+	);
+
+	wrap.querySelectorAll('[data-carousel-scroll]').forEach((button) => {
+		button.addEventListener('click', () => {
+			startManual();
+			const direction = button.dataset.carouselScroll === 'prev' ? -1 : 1;
+			const step = Math.min(carousel.clientWidth * 0.6, setWidth);
+			carousel.scrollBy({ left: direction * step, behavior: 'smooth' });
+		});
+	});
+
+	let resizeTimer;
+	window.addEventListener('resize', () => {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(layout, 150);
+	});
+}
+
+initializePartnersCarousel();
+
+// ============================================================================
 // Sticky header polish on scroll
 // ============================================================================
 

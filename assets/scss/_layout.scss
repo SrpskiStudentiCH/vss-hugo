@@ -415,8 +415,19 @@
       padding: 0.6rem 0 0;
       border-left: 0;
       border-top: 1px solid var(--border);
-      justify-content: flex-start;
+      justify-content: center;
       gap: 0.35rem;
+
+      a {
+        flex: 1;
+        text-align: center;
+
+        &::after {
+          left: 0.6rem;
+          right: 0.6rem;
+          width: auto;
+        }
+      }
     }
 
     &.is-open {
@@ -549,15 +560,58 @@
   overflow: hidden;
 }
 
+.partners-carousel-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel-arrow {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-xs);
+  cursor: pointer;
+  transition: color var(--dur-fast) ease, border-color var(--dur-fast) ease, transform var(--dur-base) var(--ease-out);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
 .partners-carousel {
   position: relative;
-  width: 100%;
-  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
   padding: 1.75rem 0;
   background: var(--surface);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-xs);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   // edge fade masks
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
@@ -567,12 +621,15 @@
 .partners-carousel__track {
   display: flex;
   gap: 1.25rem;
-  animation: scroll-carousel 22s linear infinite;
   width: fit-content;
+
+  // The looping copies are added by JS, so the marquee only runs once they exist.
+  &.is-marquee {
+    animation: scroll-carousel var(--marquee-duration, 22s) linear infinite;
+  }
 
   @media (max-width: 768px) {
     gap: 0.9rem;
-    animation-duration: 16s;
   }
 }
 
@@ -581,11 +638,11 @@
 }
 
 @keyframes scroll-carousel {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(calc(-50% - 0.625rem));
+  to {
+    transform: translateX(calc(var(--marquee-shift, 0px) * -1));
   }
 }
 

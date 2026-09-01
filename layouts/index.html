@@ -105,34 +105,37 @@
     <p class="eyebrow">{{ i18n "home_partners_title" }}</p>
     <h2 class="sr-only">{{ i18n "home_partners_title" }}</h2>
   </div>
-  <div class="partners-carousel reveal">
-    <div class="partners-carousel__track">
-      <div class="partners-carousel__item">
-        <span class="partner-logo">University Partners</span>
-      </div>
-      <div class="partners-carousel__item">
-        <span class="partner-logo">Career Network</span>
-      </div>
-      <div class="partners-carousel__item">
-        <span class="partner-logo">Student Support</span>
-      </div>
-      <div class="partners-carousel__item">
-        <span class="partner-logo">Alumni Circle</span>
-      </div>
-      <!-- Duplicate for seamless loop -->
-      <div class="partners-carousel__item">
-        <span class="partner-logo">University Partners</span>
-      </div>
-      <div class="partners-carousel__item">
-        <span class="partner-logo">Career Network</span>
-      </div>
-      <div class="partners-carousel__item">
-        <span class="partner-logo">Student Support</span>
-      </div>
-      <div class="partners-carousel__item">
-        <span class="partner-logo">Alumni Circle</span>
+  <div class="partners-carousel-wrap reveal">
+    <button class="carousel-arrow carousel-arrow--prev" type="button"
+      data-carousel-scroll="prev" aria-label="{{ i18n "partners_prev" }}" aria-controls="partners-carousel">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+
+    <div class="partners-carousel" id="partners-carousel" data-partners-carousel>
+      <div class="partners-carousel__track">
+        <div class="partners-carousel__item">
+          <span class="partner-logo">University Partners</span>
+        </div>
+        <div class="partners-carousel__item">
+          <span class="partner-logo">Career Network</span>
+        </div>
+        <div class="partners-carousel__item">
+          <span class="partner-logo">Student Support</span>
+        </div>
+        <div class="partners-carousel__item">
+          <span class="partner-logo">Alumni Circle</span>
+        </div>
       </div>
     </div>
+
+    <button class="carousel-arrow carousel-arrow--next" type="button"
+      data-carousel-scroll="next" aria-label="{{ i18n "partners_next" }}" aria-controls="partners-carousel">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
   </div>
 </section>
 

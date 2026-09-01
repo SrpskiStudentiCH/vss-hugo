@@ -14,22 +14,29 @@
     <div class="card-grid blog-list" data-search-results>
       {{ range .Paginator.Pages }}
         {{ $post := . }}
-        <article class="card post-card" data-post-card data-title="{{ $post.Title | lower }}" data-tags="{{ delimit $post.Params.tags "," }}">
+        <article class="event-card post-card reveal" data-post-card data-title="{{ $post.Title | lower }}" data-tags="{{ delimit $post.Params.tags "," }}">
           <a href="{{ $post.RelPermalink }}">
-            <figure class="card__image">
-              {{ with $post.Params.image }}
-                <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $post.Title }}" loading="lazy" width="400" height="250">
+            {{ $image := $post.Params.image }}
+            {{ if not $image }}
+              {{ with $post.Resources.GetMatch "feature*" }}{{ $image = .RelPermalink }}{{ end }}
+            {{ end }}
+            <figure class="event-card__media{{ if not $image }} event-card__media--logo{{ end }}">
+              {{ with $image }}
+                <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $post.Title }}" loading="lazy" width="640" height="360">
               {{ else }}
-                {{ with $post.Resources.GetMatch "feature*" }}
-                  <img src="{{ .RelPermalink }}" alt="{{ $post.Title }}" loading="lazy" width="400" height="250">
-                {{ else }}
-                  <img src="{{ "images/brand/logo-vss-uss.png" | relURL }}" alt="VSS-USS logo" loading="lazy" width="400" height="250">
-                {{ end }}
+                <img src="{{ "images/brand/logo-vss-uss.png" | relURL }}" alt="VSS-USS logo" loading="lazy" width="640" height="360">
               {{ end }}
             </figure>
-            <p class="card__meta">{{ $post.Date.Format "2 Jan 2006" }}</p>
-            <h2>{{ $post.Title }}</h2>
-            <p>{{ $post.Summary }}</p>
+
+            <div class="event-card__body">
+              <p class="card__meta">{{ $post.Date.Format "2 Jan 2006" }}</p>
+              <h3 class="event-card__title">{{ $post.Title }}</h3>
+              <p class="event-card__desc">{{ $post.Summary }}</p>
+              <span class="event-card__cta">
+                {{ i18n "common_read_more" }}
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
           </a>
         </article>
       {{ end }}
