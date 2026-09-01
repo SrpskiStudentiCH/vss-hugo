@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{/* Each "## heading" section of the page content is rendered as its own card. */}}
+{{ $parts := split .Content "<h2" }}
+{{ $intro := index $parts 0 | strings.TrimSpace }}
+<article class="container content-page">
+  <header class="page-hero">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="eyebrow">{{ .Title }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ with .Params.image }}
+    <figure class="hero-image">
+      <img src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Title }}" loading="lazy">
+    </figure>
+  {{ end }}
+
+  {{ with $intro }}
+    <div class="prose">{{ . | safeHTML }}</div>
+  {{ end }}
+
+  {{ if gt (len $parts) 1 }}
+    <div class="card-grid about-cards">
+      {{ range after 1 $parts }}
+        <section class="card info-card">
+          {{ printf "<h2%s" . | safeHTML }}
+        </section>
+      {{ end }}
+    </div>
+  {{ end }}
+</article>
+{{ end }}

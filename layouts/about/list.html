@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{/* Each "## heading" section of the page content is rendered as its own card. */}}
+{{ $parts := split .Content "<h2" }}
+{{ $intro := index $parts 0 | strings.TrimSpace }}
 <article class="container content-page">
   <header class="page-hero">
     {{ partial "breadcrumbs.html" . }}
@@ -7,8 +10,18 @@
     {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
   </header>
 
-  <div class="prose">
-    {{ .Content }}
-  </div>
+  {{ with $intro }}
+    <div class="prose">{{ . | safeHTML }}</div>
+  {{ end }}
+
+  {{ if gt (len $parts) 1 }}
+    <div class="card-grid about-cards">
+      {{ range after 1 $parts }}
+        <section class="card info-card">
+          {{ printf "<h2%s" . | safeHTML }}
+        </section>
+      {{ end }}
+    </div>
+  {{ end }}
 </article>
 {{ end }}
