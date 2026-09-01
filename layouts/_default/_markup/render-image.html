@@ -3,4 +3,4 @@
 {{ if hasPrefix $src "/" }}
   {{ $src = strings.TrimPrefix "/" $src | relURL }}
 {{ end }}
-<p><img src="{{ $src | safeURL }}" alt="{{ .Text }}" loading="lazy" {{ with .Title }}title="{{ . }}"{{ end }}></p>
+<img src="{{ $src | safeURL }}" alt="{{ .Text }}" loading="lazy" {{ with .Title }}title="{{ . }}"{{ end }}>
