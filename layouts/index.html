@@ -78,7 +78,7 @@
   <div class="card-grid card-grid--blog">
     {{ range first 3 (where .Site.RegularPages "Section" "events") }}
       {{ $e := . }}
-      <article class="card card--blog card--minimal">
+      <article class="card home-card">
         <a href="{{ $e.RelPermalink }}">
           <figure class="card__image">
             {{ with $e.Params.image }}
@@ -115,7 +115,7 @@
   <div class="card-grid card-grid--blog">
     {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
       {{ $p := . }}
-      <article class="card card--blog card--minimal">
+      <article class="card home-card">
         <a href="{{ $p.RelPermalink }}">
           <figure class="card__image">
             {{ with $p.Params.image }}

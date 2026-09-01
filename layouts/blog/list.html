@@ -14,7 +14,7 @@
     <div class="card-grid blog-list" data-search-results>
       {{ range .Paginator.Pages }}
         {{ $post := . }}
-        <article class="card card--blog card--listing post-card" data-post-card data-title="{{ $post.Title | lower }}" data-tags="{{ delimit $post.Params.tags "," }}">
+        <article class="card post-card" data-post-card data-title="{{ $post.Title | lower }}" data-tags="{{ delimit $post.Params.tags "," }}">
           <a href="{{ $post.RelPermalink }}">
             <figure class="card__image">
               {{ with $post.Params.image }}
