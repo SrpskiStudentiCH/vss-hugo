@@ -1,5 +1,5 @@
 +++
-title = "Srpski studenti u Švajcarskoj"
+title = "Udruženje srpskih studenata"
 description = "Sve što ti treba u Švajcarskoj!"
 layout = "home"
 +++

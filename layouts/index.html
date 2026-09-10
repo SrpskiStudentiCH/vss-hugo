@@ -111,7 +111,7 @@
 
 <section class="container section-spacing partners-section">
   <div class="section-heading">
-    <p class="eyebrow">{{ i18n "home_partners_title" }}</p>
+    <p class="eyebrow">{{ i18n "home_partners_eyebrow" }}</p>
     <h2 class="sr-only">{{ i18n "home_partners_title" }}</h2>
   </div>
   <div class="partners-carousel-wrap reveal">
@@ -124,18 +124,13 @@
 
     <div class="partners-carousel" id="partners-carousel" data-partners-carousel>
       <div class="partners-carousel__track">
-        <div class="partners-carousel__item">
-          <span class="partner-logo">University Partners</span>
-        </div>
-        <div class="partners-carousel__item">
-          <span class="partner-logo">Career Network</span>
-        </div>
-        <div class="partners-carousel__item">
-          <span class="partner-logo">Student Support</span>
-        </div>
-        <div class="partners-carousel__item">
-          <span class="partner-logo">Alumni Circle</span>
-        </div>
+        {{ range site.Params.partners }}
+          <div class="partners-carousel__item">
+            <a class="partner-logo" href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .name }}" aria-label="{{ .name }}">
+              <img src="{{ .logo | strings.TrimPrefix "/" | relURL }}" alt="{{ .name }}" loading="lazy">
+            </a>
+          </div>
+        {{ end }}
       </div>
     </div>
 

@@ -1110,6 +1110,84 @@ ul.card-grid {
 }
 
 // ---------------------------------------------------------------------------
+// Support — donation (TWINT QR + bank details)
+// ---------------------------------------------------------------------------
+
+.donation-card {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+
+  @media (min-width: 780px) {
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  }
+}
+
+.donation-card__qr {
+  display: flex;
+  justify-content: center;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+.donation-card__info h2 {
+  margin: 0.35rem 0 0.75rem;
+}
+
+.donation-card__intro {
+  max-width: 46ch;
+  color: var(--text-secondary);
+  line-height: 1.62;
+}
+
+.bank-details {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  &__row {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.85rem 1.1rem;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    dt {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    dd {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text);
+      overflow-wrap: anywhere;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Accordion
 // ---------------------------------------------------------------------------
 

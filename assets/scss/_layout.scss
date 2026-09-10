@@ -659,31 +659,60 @@
 }
 
 .partner-logo {
-  display: inline-block;
-  padding: 0.85rem 1.4rem;
-  background: var(--surface-strong);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-full);
-  color: var(--text-secondary);
-  font-weight: 700;
-  font-size: 0.86rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  filter: grayscale(100%);
-  transition: all var(--dur-base) var(--ease-out);
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 72px;
+  border-radius: var(--radius-md);
+  transition: transform var(--dur-base) var(--ease-out);
 
-  @media (max-width: 768px) {
-    padding: 0.7rem 1.1rem;
-    font-size: 0.78rem;
+  img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 100%;
+    object-fit: contain;
+    // Monochrome by default; colour + subtle pop on hover/focus.
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: filter var(--dur-base) var(--ease-out), opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
   }
 
-  &:hover {
-    filter: grayscale(0%);
-    transform: scale(1.06) translateY(-2px);
-    color: var(--accent);
-    border-color: var(--accent);
-    box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 20%, transparent);
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-2px);
+
+    img {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.08);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 768px) {
+    height: 62px;
+
+    img {
+      max-width: 118px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img {
+      transition: filter var(--dur-base) ease, opacity var(--dur-base) ease;
+    }
+
+    &:hover img,
+    &:focus-visible img {
+      transform: none;
+    }
   }
 }
 

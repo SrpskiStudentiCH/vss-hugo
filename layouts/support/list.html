@@ -34,6 +34,36 @@
     </section>
   {{ end }}
 
+  {{ with site.Params.donation }}
+    <section class="container section-spacing section-spacing--tight">
+      <div class="donation-card reveal">
+        <div class="donation-card__qr">
+          <img src="{{ (.qr | default "images/twint.png") | strings.TrimPrefix "/" | relURL }}"
+            alt="{{ i18n "support_twint_alt" }}" loading="lazy" width="357" height="541">
+        </div>
+        <div class="donation-card__info">
+          <p class="eyebrow">{{ i18n "support_bank_eyebrow" }}</p>
+          <h2>{{ i18n "support_bank_title" }}</h2>
+          <p class="donation-card__intro">{{ i18n "support_bank_intro" }}</p>
+          <dl class="bank-details">
+            <div class="bank-details__row">
+              <dt>{{ i18n "support_bank_receiver" }}</dt>
+              <dd>{{ .receiver }}</dd>
+            </div>
+            <div class="bank-details__row">
+              <dt>{{ i18n "support_bank_iban" }}</dt>
+              <dd>{{ .iban }}</dd>
+            </div>
+            <div class="bank-details__row">
+              <dt>{{ i18n "support_bank_city" }}</dt>
+              <dd>{{ .city }}</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
   <section class="container section-spacing">
     <div class="accent-band join-cta reveal">
       <div>

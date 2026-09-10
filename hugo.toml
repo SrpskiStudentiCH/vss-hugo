@@ -1,5 +1,5 @@
 baseURL = "https://proton-org-rs.github.io/vss-hugo/"
-title = "Srpski studenti u Švajcarskoj"
+title = "Udruženje srpskih studenata"
 languageCode = "sr-RS"
 defaultContentLanguage = "sr"
 defaultContentLanguageInSubdir = false
@@ -23,6 +23,51 @@ buildExpired = false
     email = "info@srpskistudenti.ch"
     linkedin = "https://www.linkedin.com/"
     instagram = "https://www.instagram.com/verein_serbischer_studierender/"
+
+  # Partneri i institucije koje podržavaju udruženje (prikaz na početnoj strani).
+  [[params.partners]]
+    name = "Srpski institut u Švajcarskoj"
+    logo = "/images/partners/srpski-institut-u-svajcarskoj.png"
+    url = "https://serbinstitut.ch/de/"
+  [[params.partners]]
+    name = "Srpska pravoslavna crkva"
+    logo = "/images/partners/srpska-pravoslavna-crkva.jpg"
+    url = "https://pravoslavnacrkva.ch/"
+  [[params.partners]]
+    name = "HELSE Kulturverein"
+    logo = "/images/partners/helse.jpg"
+    url = "https://helse.ch/about"
+  [[params.partners]]
+    name = "Srbi za Srbe"
+    logo = "/images/partners/srbi-za-srbe.jpg"
+    url = "https://www.srbizasrbe.org/svajcarska/"
+  [[params.partners]]
+    name = "OCES Lausanne"
+    logo = "/images/partners/oces.jpg"
+    url = "https://www.instagram.com/oceslausanne/"
+  [[params.partners]]
+    name = "VSETH"
+    logo = "/images/partners/vseth.png"
+    url = "https://vseth.ethz.ch/"
+  [[params.partners]]
+    name = "VSUZH"
+    logo = "/images/partners/vsuzh.png"
+    url = "https://www.vsuzh.ch/"
+  [[params.partners]]
+    name = "Generalni konzulat Republike Srbije u Cirihu"
+    logo = "/images/partners/konzulat.png"
+    url = "https://zurich.mfa.gov.rs/lat"
+  [[params.partners]]
+    name = "Ambasada Republike Srbije u Švajcarskoj"
+    logo = "/images/partners/ambasada.png"
+    url = "https://berne.mfa.gov.rs/de"
+
+  # Podaci za donacije (prikaz na stranici Podrška).
+  [params.donation]
+    receiver = "Verein Serbischer Studierender"
+    iban = "CH69 0070 0114 9050 6859 7"
+    city = "8006 Zürich"
+    qr = "/images/twint.png"
 
 [pagination]
   pagerSize = 9

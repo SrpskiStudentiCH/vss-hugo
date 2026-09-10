@@ -1,5 +1,5 @@
 # Srpski - Translation Strings
-site_title: "Srpski studenti u Švajcarskoj"
+site_title: "Udruženje srpskih studenata"
 site_description: "Zajednica srpskih studenata u Švajcarskoj"
 
 # Navigation
@@ -136,6 +136,13 @@ support_title: "Podrška"
 support_description: "Fondacije, partneri i prijatelji organizacije koji podržavaju naš rad"
 support_donate_button: "Kontaktiraj nas za donaciju"
 support_cta_text: "Piši nam — odgovaramo brzo i rado ćemo se čuti."
+support_bank_eyebrow: "Donacija"
+support_bank_title: "Twint QR kod i bankovni podaci"
+support_bank_intro: "Skeniraj Twint QR kod u aplikaciji ili izvrši uplatu direktno na račun udruženja. Hvala na podršci!"
+support_bank_receiver: "Primalac"
+support_bank_iban: "IBAN"
+support_bank_city: "Mesto"
+support_twint_alt: "Twint QR kod za donaciju udruženju"
 
 # Documents
 documents_title: "Dokumenta"
@@ -155,7 +162,7 @@ footer_newsletter: "Prijavite se na naš newsletter"
 footer_follow: "Pratite nas"
 
 # Home Page
-home_eyebrow: "Srpski studenti u Švajcarskoj"
+home_eyebrow: "Udruženje srpskih studenata"
 home_title: "Tu smo za tebe, na svakom koraku tvog puta u Švajcarskoj!"
 home_description: "Studentska organizacija sa jasnim identitetom, modernim sadržajem i ozbiljnim pristupom umrežavanju u Švajcarskoj."
 home_cta_join: "Pridruži se"
@@ -179,7 +186,7 @@ home_membership_volunteer_desc: "Možeš da se uključiš u organizaciju događa
 home_membership_cta: "Postani član"
 home_membership_intro: "Članarina je 35 CHF godišnje — bez paketa i nivoa. Učlani se u par minuta."
 home_partners_eyebrow: "Partneri"
-home_partners_title: "Partneri koji nas podržavaju"
+home_partners_title: "Partneri"
 partners_prev: "Prethodni partneri"
 partners_next: "Sledeći partneri"
 home_newsletter_eyebrow: "Newsletter"
