@@ -30,6 +30,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Setup Hugo
@@ -39,7 +40,9 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo
+        env:
+          HUGO_ENVIRONMENT: production
+        run: hugo --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
