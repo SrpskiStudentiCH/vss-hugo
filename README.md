@@ -31,6 +31,10 @@ Build izlazi u `public/` (folder je u `.gitignore`, ne commit-uje se).
 
 Netlify za `HUGO_VERSION` instalira extended Hugo build, što je neophodno za `toCSS` pipeline iz `assets/scss/`.
 
+### Verzija Hugo-a
+
+GitHub Pages i Netlify su **pinovani na Hugo 0.167.0**. `hugo.toml` koristi `module.mounts.lang` i `module.mounts.excludeFiles` (da srpski build ne bi preuzeo `content/en` i `content/de`); oba ključa su uklonjena u Hugu 0.168.0, pa podizanje na 0.168+ ruši build sa `error building site: logged 2 error(s)`. Pre prelaska na noviji Hugo, mount-ove treba migrirati na `sites.matrix` i `files`.
+
 Lokalna provera Netlify build-a:
 
 ```bash
