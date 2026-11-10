@@ -17,7 +17,11 @@ buildExpired = false
 
   # URL Google Form-a za učlanjenje (otvara se u novom tabu).
   # Dok je prazno, CTA vodi na kontakt stranicu.
-  joinFormUrl = "https://forms.gle/mUhni8ENvspYyWW68"
+  joinFormUrl = "https://forms.gle/RH6JQLMDbyvJdKdi7"
+
+  # URL Google Form-a za prijavu na newsletter (otvara se u novom tabu).
+  # Dok je prazno, dugme vodi na kontakt stranicu.
+  newsletterFormUrl = "https://forms.gle/bAe2SHeMr5Qws2Yj7"
 
   # Google kalendar sa aktivnostima (prikaz na stranici Događaji).
   # ID je deo "src" parametra Google embed linka.

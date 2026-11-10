@@ -1530,22 +1530,11 @@ textarea {
   }
 }
 
-.newsletter-form,
 .search-bar,
 .contact-form {
   display: flex;
   gap: 0.65rem;
   flex-wrap: wrap;
-}
-
-.newsletter-form input {
-  width: 100%;
-  max-width: 300px;
-}
-
-.newsletter-form .button {
-  white-space: normal;
-  text-align: center;
 }
 
 .contact-form label {
@@ -1581,25 +1570,7 @@ textarea {
     gap: 2.5rem;
   }
 
-  .newsletter-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.65rem;
-    width: 100%;
-
-    @media (max-width: 560px) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  // Input and button share the same width and height
-  .newsletter-form input {
-    width: 100%;
-    max-width: none;
-    min-height: 54px;
-  }
-
-  .newsletter-form .button {
+  > .button {
     width: 100%;
     min-height: 54px;
     height: auto;

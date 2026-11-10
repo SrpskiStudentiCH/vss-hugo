@@ -97,6 +97,15 @@ Join stranica je pripremljena za budući Google Form. Kada formular bude spreman
    otvarati se u novom tabu.
 3. Dok je polje prazno, dugme vodi na kontakt stranicu.
 
+## Newsletter
+
+Newsletter nema polje za unos e-maila — prijava ide preko Google Form-a. Link se
+menja na jednom mestu, u `hugo.toml`:
+
+1. `newsletterFormUrl = "https://forms.gle/..."` — URL Google Form-a za prijavu.
+2. Dugme „Prijavi se“ (u podnožju i na početnoj strani) otvara formu u novom tabu.
+3. Dok je polje prazno, dugme vodi na kontakt stranicu.
+
 ## Kalendar događaja
 
 Na stranici Događaji (srpski, engleski i nemački) prikazan je Google kalendar

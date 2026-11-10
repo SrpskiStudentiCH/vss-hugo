@@ -196,6 +196,7 @@ partners_next: "Next partners"
 home_newsletter_eyebrow: "Newsletter"
 home_newsletter_title: "Subscribe for new events and resources"
 home_newsletter_desc: "One email per month, no spam, just useful information for students and alumni."
+newsletter_cta: "Subscribe"
 
 # Common
 common_read_more: "Read More"

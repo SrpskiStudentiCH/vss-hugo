@@ -1,0 +1,9 @@
+{{ $form := site.Params.newsletterFormUrl | default "" }}
+{{ $class := .class | default "button button--primary" }}
+{{ $label := .label | default (i18n "newsletter_cta") }}
+
+{{ if $form }}
+  <a class="{{ $class }}" href="{{ $form }}" target="_blank" rel="noopener">{{ $label }}</a>
+{{ else }}
+  <a class="{{ $class }}" href="{{ "contact" | relLangURL }}">{{ $label }}</a>
+{{ end }}

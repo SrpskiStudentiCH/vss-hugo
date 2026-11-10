@@ -873,15 +873,8 @@
 .site-footer__newsletter {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 0.5rem;
-
-  label {
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-  }
 }
 
 .site-footer__copyright {

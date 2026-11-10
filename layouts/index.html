@@ -150,9 +150,6 @@
     <p>{{ i18n "home_newsletter_desc" }}</p>
   </div>
 
-  <form class="newsletter-form">
-    <input type="email" placeholder="Email" aria-label="Email" required>
-    <button class="button button--primary" type="submit">{{ i18n "footer_newsletter" }}</button>
-  </form>
+  {{ partial "newsletter-cta.html" (dict "class" "button button--primary") }}
 </section>
 {{ end }}
