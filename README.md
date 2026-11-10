@@ -26,7 +26,7 @@ hugo new events/moj-dogadaj.md
 
 Build izlazi u `public/` (folder je u `.gitignore`, ne commit-uje se).
 
-- **GitHub Pages** — `.github/workflows/hugo.yml` pokreće `hugo` i objavljuje `public/`. `baseURL` se pri build-u preuzima iz `actions/configure-pages` (`steps.pages.outputs.base_url`), pa se automatski prilagođava stvarnom Pages domenu; `baseURL` u `hugo.toml` (`https://srpskistudentich.github.io/vss-hugo/`) služi samo kao fallback za lokalni build.
+- **GitHub Pages** — `.github/workflows/hugo.yml` pokreće `hugo` i objavljuje `public/`. `baseURL` se pri build-u preuzima iz `actions/configure-pages` (`steps.pages.outputs.base_url`), pa se automatski prilagođava stvarnom Pages domenu; `baseURL` u `hugo.toml` (`https://srpskistudentich.github.io/vss-hugo/`) služi samo kao fallback za lokalni build. Pages za **privatne** repo-e zahteva GitHub Pro/Team/Enterprise — na Free planu deploy pada sa HTTP 422.
 - **Netlify** — `netlify.toml` definiše build komandu, publish folder i verziju Hugo-a. `baseURL` se pri build-u postavlja na URL deploy-a (`DEPLOY_PRIME_URL`, odnosno `URL`), pa sajt radi i na `*.netlify.app` i na custom domenu bez menjanja `hugo.toml`.
 
 Netlify za `HUGO_VERSION` instalira extended Hugo build, što je neophodno za `toCSS` pipeline iz `assets/scss/`.
