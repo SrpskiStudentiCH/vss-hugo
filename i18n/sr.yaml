@@ -65,6 +65,10 @@ events_date: "Datum"
 events_location: "Lokacija"
 events_type: "Tip"
 events_details: "Detalji"
+events_calendar_title: "Kalendar događaja"
+events_calendar_desc: "Sve aktivnosti udruženja na jednom mestu — novi termini se automatski ažuriraju."
+events_calendar_iframe: "Google kalendar sa aktivnostima udruženja"
+events_calendar_open: "Otvori kalendar u novom prozoru"
 
 # Blog
 blog_title: "Blog"

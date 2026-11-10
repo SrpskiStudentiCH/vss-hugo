@@ -65,6 +65,10 @@ events_date: "Date"
 events_location: "Location"
 events_type: "Type"
 events_details: "Details"
+events_calendar_title: "Event Calendar"
+events_calendar_desc: "All of the association's activities in one place — new dates are updated automatically."
+events_calendar_iframe: "Google Calendar with the association's activities"
+events_calendar_open: "Open the calendar in a new window"
 
 # Blog
 blog_title: "Blog"

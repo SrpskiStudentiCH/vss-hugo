@@ -15,6 +15,50 @@
     </div>
   {{ end }}
 
+  {{ $calendarID := site.Params.eventsCalendarId }}
+  {{ if $calendarID }}
+    {{ $hl := "sr" }}
+    {{ if eq site.Language.Lang "en" }}
+      {{ $hl = "en_GB" }}
+    {{ else if eq site.Language.Lang "de" }}
+      {{ $hl = "de" }}
+    {{ end }}
+    {{ $calendarURL := printf "https://calendar.google.com/calendar/embed?%s" (querify
+      "src" $calendarID
+      "color" (site.Params.eventsCalendarColor | default "#7986cb")
+      "ctz" "Europe/Zurich"
+      "hl" $hl
+      "mode" "MONTH"
+      "wkst" "1"
+      "height" "620"
+      "showTitle" "0"
+      "showPrint" "0"
+      "showTz" "0"
+      "showCalendars" "0"
+      "showTabs" "0"
+    ) }}
+    <section class="container events-calendar reveal" aria-labelledby="events-calendar-title">
+      <div class="section-heading">
+        <p class="eyebrow">{{ i18n "nav_activities" }}</p>
+        <h2 id="events-calendar-title">{{ i18n "events_calendar_title" }}</h2>
+        <p class="section-heading__desc">{{ i18n "events_calendar_desc" }}</p>
+      </div>
+      <div class="events-calendar__frame">
+        <iframe
+          src="{{ $calendarURL }}"
+          title="{{ i18n "events_calendar_iframe" }}"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="events-calendar__link">
+        <a href="{{ $calendarURL }}" target="_blank" rel="noopener">
+          {{ i18n "events_calendar_open" }}
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14 4h6v6m0-6L10 14M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </p>
+    </section>
+  {{ end }}
+
   {{ $now := now }}
   {{ $upcoming := slice }}
   {{ $current := slice }}

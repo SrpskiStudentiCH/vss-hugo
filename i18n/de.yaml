@@ -65,6 +65,10 @@ events_date: "Datum"
 events_location: "Ort"
 events_type: "Typ"
 events_details: "Details"
+events_calendar_title: "Veranstaltungskalender"
+events_calendar_desc: "Alle Aktivitäten des Vereins an einem Ort — neue Termine werden automatisch aktualisiert."
+events_calendar_iframe: "Google Kalender mit den Aktivitäten des Vereins"
+events_calendar_open: "Kalender in einem neuen Fenster öffnen"
 
 # Blog
 blog_title: "Blog"

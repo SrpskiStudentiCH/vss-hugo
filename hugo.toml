@@ -19,6 +19,11 @@ buildExpired = false
   # Dok je prazno, CTA vodi na kontakt stranicu.
   joinFormUrl = "https://forms.gle/mUhni8ENvspYyWW68"
 
+  # Google kalendar sa aktivnostima (prikaz na stranici Događaji).
+  # ID je deo "src" parametra Google embed linka.
+  eventsCalendarId = "NjYyYjM5NWUzMDBkNTVmMzNkZGYzNTJlNGVhYjUxZDVhY2ZiY2RmMGZmMjQ3YmY5YWE3YjY2MDRjZGRjOWRhZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+  eventsCalendarColor = "#7986cb"
+
   [params.contact]
     email = "info@srpskistudenti.ch"
     linkedin = "https://www.linkedin.com/"

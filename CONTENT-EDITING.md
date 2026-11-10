@@ -97,6 +97,18 @@ Join stranica je pripremljena za budući Google Form. Kada formular bude spreman
    otvarati se u novom tabu.
 3. Dok je polje prazno, dugme vodi na kontakt stranicu.
 
+## Kalendar događaja
+
+Na stranici Događaji (srpski, engleski i nemački) prikazan je Google kalendar
+sa aktivnostima udruženja. Kalendar se podešava u `hugo.toml`, u `[params]`:
+
+- `eventsCalendarId` — deo Google embed linka (`src=...`). Ako je polje prazno,
+  kalendar se ne prikazuje.
+- `eventsCalendarColor` — boja kalendara u hex formatu (npr. `"#7986cb"`).
+
+Jezik prikaza kalendara se automatski prilagođava jeziku sajta, a termini se
+menjaju direktno u Google kalendaru — bez izmene sadržaja sajta.
+
 ## Dodavanje dokumenta
 
 U `content/documents/_index.md` svako dokumento je stavka u nizu `docs`:
